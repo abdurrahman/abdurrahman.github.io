@@ -1,0 +1,16 @@
+- name: Facebook
+  link: 'https://www.facebook.com/xJason21'
+  social_icon: Facebook
+  new_window: true
+- name: Twitter
+  link: 'https://twitter.com/xJason21'
+  social_icon: Twitter
+  new_window: true
+- name: Instagram
+  link: 'https://instagram.com/xJason21'
+  social_icon: Instagram
+  new_window: true
+- name: RSS
+  link: '/feed.xml'
+  social_icon: RSS
+  new_window: true
