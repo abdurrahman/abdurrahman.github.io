@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Example content
+title: ASP.NET MVC uygulamalarında ViewBag, ViewData ve TempData ne zaman kullanılır ?
 ---
 
 
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 </div>
-
+js
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
@@ -35,7 +35,7 @@ Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est 
 
 Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-{% highlight js %}
+{% highlight csharp %}
 // Example can be run directly in your JavaScript console
 
 // Create a function that takes two arguments and returns the sum of those arguments
@@ -44,6 +44,25 @@ var adder = new Function("a", "b", "return a + b");
 // Call the function
 adder(2, 6);
 // > 8
+
+    public class HomeController : Controller
+    {
+        // ViewBag &amp; ViewData sample
+        public ActionResult Index()
+        {
+            var mainStore = new Store
+            {
+                Name = &quot;The Cheesecake Factory Inc.&quot;,
+                Address = &quot;14 Tottenham Court Road - London, England&quot;,
+                PhoneNumber = &quot;555-555-55-55&quot;,
+                StoreCode = &quot;1001&quot;
+            };
+            ViewData[&quot;MainStore&quot;] = mainStore;
+            ViewBag.Store = mainStore;
+            TempData[&quot;MainStore&quot;] = mainStore;
+            return View();
+        }
+    }
 {% endhighlight %}
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
