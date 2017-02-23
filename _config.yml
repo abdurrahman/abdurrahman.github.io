@@ -8,9 +8,9 @@ relative_permalinks: false
 title:               uykusuz adam
 tagline:             'uykusuz adam blog'
 description:         '.Net framework, asp.net mvc, javascript and some back-end stuffs from Abdurrahman Işık'
-url:                 http://abdurrahman.github.io/
+url:                 http://abdurrahman.github.io
 baseurl:             ''
-paginate:            5
+paginate:            10
 
 # About/contact
 author:
