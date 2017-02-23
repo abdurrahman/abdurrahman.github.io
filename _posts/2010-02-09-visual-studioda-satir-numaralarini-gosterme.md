@@ -1,7 +1,7 @@
 ---
 layout: post
-title: What's Jekyll?
-abstract: **Visual Studio**‘da satır numaraları default olarak kapalı gelmektedir. Kod yazarken kolaylık olması açısından satır numaralarının görünür olması faydalı olacaktır.
+title: Visual Studio’da satır numaralarını gösterme 
+abstract: Visual Studio‘da satır numaraları default olarak kapalı gelmektedir. Kod yazarken kolaylık olması açısından satır numaralarının görünür olması faydalı olacaktır.
 ---
 
 **Visual Studio**‘da satır numaraları default olarak kapalı gelmektedir. Kod yazarken kolaylık olması açısından satır numaralarının görünür olması faydalı olacaktır.
