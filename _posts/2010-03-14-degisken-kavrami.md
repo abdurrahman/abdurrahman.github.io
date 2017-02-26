@@ -1,16 +1,17 @@
 ---
 layout: post
 title: C#'da değişken kavramı
+date: 2010-03-14 23:42:51 +02:00
 abstract: C# programlama dilinde başlangıç olarak ilk konumuz değişken kavramı olacaktır. Değişkenler ihtiyaca göre tanımlanır, örneğin sayısal bir veri üzerinden derleyiciye iş yaptıracağız, bunun için bizim bellekte bir sayı değişkeni tanımlamamız gerekecek.
 ---
 
-C# programlama dilinde başlangıç olarak ilk konumuz değişken kavramı olacaktır.Değişkenler ihtiyaca göre tanımlanır, örneğin sayısal bir veri üzerinden derleyiciye iş yaptıracağız, bunun için bizim bellekte bir sayı değişkeni tanımlamamız gerekecek. Örnek olarak;
+C# programlama dilinde başlangıç olarak ilk konumuz değişken kavramı olacaktır. Değişkenler ihtiyaca göre tanımlanır, örneğin sayısal bir veri üzerinden derleyiciye iş yaptıracağız, bunun için bizim bellekte bir sayı değişkeni tanımlamamız gerekecek. Örnek olarak;
 
 {% highlight csharp %}
-int degiskenSayi = 25;
+int sayi = 25;
 {% endhighlight %}
 
-Yukarıda **int** tipinde “degiskenSayi”  adında değeri 25 olan bir değişken tanımladık. Şimdi bunu ekrana yazdıralım;
+Yukarıda **int** tipinde "sayi" adında değeri 25 olan bir değişken tanımladık. Şimdi bunu ekrana yazdıralım;
 
 {% highlight csharp %}
 Console.WriteLine(degiskenSayi);
@@ -34,21 +35,21 @@ Console.WriteLine(c);
 Console.ReadLine();
 {% endhighlight %}
 
-Yukarıdaki örnekte de ilk başta a,b ve c değişkenlerimizi tanımladık ve bu değerler belleğin stack bölgesinde bizim için `null` yani boş olarak oluşturuldu. Değerlerini ise sonradan verdik, daha sonra da her birini ekrana ayrı ayrı yazdırdık. Şimdi de hem **string** bir değişken tanımlayalım;
+Yukarıdaki örnekte de ilk başta a,b ve c değişkenlerimizi tanımladık ve bu değerler belleğin stack bölgesinde bizim için `null` yani boş olarak oluşturuldu. Değerlerini ise sonradan verdik, daha sonra da her birini ekrana ayrı ayrı yazdırdık. Şimdi de **string** bir değişken tanımlayalım;
 
 {% highlight csharp %}
-string kelimeDegisken = "İstanbul-34";
-Console.WriteLine(kelimeDegisken);
+string kelime = "İstanbul-34";
+Console.WriteLine(kelime);
 Console.ReadLine();
 {% endhighlight %}
 
-Yukarıda bu kez string tipinde bir kelime değişkeni tanımladım, değerimi verdim ve ekrana yazdırdım.
+Yukarıda bu kez "kelime" adında string tipinde bir değişken tanımlayıp, "İstanbul-34" değerimi verdim ve ekrana yazdırdım.
 
-**bool** değişkeni bize true ya da false değeri döner, yani yaptıracağımız işlemde doğru mu yanlış mı kontrollerini takip etmemize olanak sağlar.
+**bool** değişkeni bize true ya da false değeri döner, yani yaptıracağımız bir işlemde doğru mu ya da yanlış mı kontrollerini takip etmemize olanak sağlar.
 
 {% highlight csharp %}
-bool boolDegisken = true;
-Console.WriteLine(boolDegisken);
+bool kayitSilindiMi = true;
+Console.WriteLine(kayitSilindiMi);
 Console.ReadLine();
 
 double doubleDegisken = 10.2;

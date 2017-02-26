@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Visual Studio’da satır numaralarını gösterme 
+title: Visual Studio’da satır numaralarını gösterme
+date: 2010-02-09 23:53:14 +02:00
 abstract: Visual Studio‘da satır numaraları default olarak kapalı gelmektedir. Kod yazarken kolaylık olması açısından satır numaralarının görünür olması faydalı olacaktır.
 ---
 
