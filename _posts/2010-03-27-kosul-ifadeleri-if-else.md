@@ -52,21 +52,9 @@ if (sayi % 2 == 0) // sayı değerinin 2’ye bölümünden kalan değerin 0’a
   Console.WriteLine(“Girmiş olduğunuz {0} sayısı çifttir”, sayi); // if teki değeri true ise ekrana çift ifadesini yazdırdık..
 else
   Console.WriteLine(“Girmiş olduğunuz {0} sayısı tektir”, sayi); // if teki koşul false ise yani sayi tek ise burasi çalışacak..
-{% enConsole.Write("1 sayı giriniz :"); // Kullanıcıdan bir değer aldım...
-int a = int.Parse(Console.ReadLine()); // Kullanıcıdan gelen değeri a değişken üzerine aldım.
-Console.Write("1 sayı daha giriniz :"); // Kullanıcıdan başka bir değer daha aldım...
-int b = int.Parse(Console.ReadLine()); // Kullanıcıdan gelen diğer değeri b değişken üzerine aldım.
+{% endhighlight %}
 
-if (a > b) // a’nın b’den büyük olma koşuluna bakıyoruz.
-{
-  Console.WriteLine(“a sayısı b sayısından büyüktür”);
-}
-else // a’nın b’den büyük olma koşulu sağlanmadıysa else bloğu çalışacak...
-{
-  Console.WriteLine(“a sayısı b yi geçemedi..!”);
-}dhighlight %}
-
-<span style="color:#800000;"><strong> Örnek 4 :</strong></span>
+<span style="color:#800000;"><strong> Örnek 3 :</strong></span>
 
 {% highlight csharp %}
 Console.Write(“Lütfen bir sayı giriniz :”);
