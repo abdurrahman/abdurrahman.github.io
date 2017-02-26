@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Değer Tip vs. Referans Tip
+title: Değer tip vs. referans tip
 date: 2010-03-14 23:58:52 +02:00
 abstract: C# dilinde değişkenler Değer Tip(Value Type) ve Referans Tip(Reference Type) ikiye ayrılır, bunlardan özellikleriyle bahsedelim;
 ---
@@ -9,21 +9,21 @@ C# dilinde değişkenler **Değer Tip(Value Type)** ve **Referans Tip(Reference 
 
 ### Değer Tipleri:
 
-    * Verilerini doğrudan kendi üzerinde saklarlar.
-    * Her bir değişken, verisinin bir kopyasını taşır.
-    * Bir değişken üzerinde yapılan değişiklik diğerini etkilemez.
-    * Veri, belleğin stack bölgesinde tutulur.
-    * Tanımlamak veri tipi ve değişken adı yeterlidir.
-    * Null (boş) değer alamazlar.
+- Verilerini doğrudan kendi üzerinde saklarlar.
+- Her bir değişken, verisinin bir kopyasını taşır.
+- Bir değişken üzerinde yapılan değişiklik diğerini etkilemez.
+- Veri, belleğin stack bölgesinde tutulur.
+- Tanımlamak veri tipi ve değişken adı yeterlidir.
+- Null (boş) değer alamazlar.
 
 ### Referans Tipleri:
 
-    * Verilerinin adreslerini (referanslarını) saklarlar.
-    * İki referans değişkeni aynı veriyi işaret edebilir.
-    * İki değişkenin birbirine eşitlenmesi sonrası, bir değişken üzerinde yapılan değişiklik diğerini etkileyebilir.
-    * Veri belleğin Heap bölgesinde tutulurken; verinin heap bölgesindeki adresini tutan değişken stack bölgesinde tutulur.
-    * Değer tiplerine ek olarak “new” anahtar kelimesiyle oluştururlurlar.
-    * Null değer alabilirler. Referans değişkeninin ‘null’ değer alması, işaret edeceği bir nesnenin olmaması anlamına gelir.
+- Verilerinin adreslerini (referanslarını) saklarlar.
+- İki referans değişkeni aynı veriyi işaret edebilir.
+- İki değişkenin birbirine eşitlenmesi sonrası, bir değişken üzerinde yapılan değişiklik diğerini etkileyebilir.
+- Veri belleğin Heap bölgesinde tutulurken; verinin heap bölgesindeki adresini tutan değişken stack bölgesinde tutulur.
+- Değer tiplerine ek olarak “new” anahtar kelimesiyle oluştururlurlar.
+- Null değer alabilirler. Referans değişkeninin ‘null’ değer alması, işaret edeceği bir nesnenin olmaması anlamına gelir.
 
 Aşağıdaki şekilde C# tipleri ve alacağı maximum ve minimum değerleri verilmiştir. Toplam olarak 15 veri tipi vardır bunlardan 13’ü değer 2’si referans tiplidir.
 
