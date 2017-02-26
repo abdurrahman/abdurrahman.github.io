@@ -79,9 +79,12 @@ Yine kontrolü bool tarafından yapılan ve, veya operatörlerini inceleyelim;
 string user = "Admin";
 string pass = "123456";
 
-bool kullaniciVarMi = user == &quot;Admin&quot; &amp;amp;&amp;amp; pass == &quot;123456&quot;; // Bu iki değişkeni bool bir değişkende, ikisininde (&amp;amp;&amp;amp;) operatörü ile eşit olma durumuna bakıyorum.
-Console.WriteLine(&quot;Kullanıcı adı ve parola eşleşme durumu: {0}&quot;, kullaniciVarMi); // Ekrana true değeri yazdırıyorum
+bool kullaniciVarMi = user == "Admin" && pass == "123456";
+// Bu iki değişkeni bool bir değişkende, ikisininde && operatörü ile eşit olma durumuna bakıyorum.
+Console.WriteLine("Kullanıcı adı ve parola eşleşme durumu: {0}", kullaniciVarMi); // Ekrana true değeri yazdırıyorum
 {% endhighlight %}
+
+Burada neden && (ve) operatörünü kullandık. Çünkü hem kullanıcı adının hem de şifrenin de eşleşmesi(doğrulanması) gerekiyor. Diğer operatörü kullansaydık || (ve ya) sadece kullanıcı adı bile doğru yazılsa parola eşleşme durumuna hiç bakılmadan true değeri dönecekti. Bu tarz kullanımlarda amaç ve hedefe dikkat etmek gerekiyor.
 
 ### Büyük-Küçük Operatörleri (<,<=,>,>=)
 
