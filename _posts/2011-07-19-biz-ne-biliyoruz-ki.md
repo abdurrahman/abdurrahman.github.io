@@ -9,7 +9,7 @@ Bazen en iyi bildiğimiz şey bile bizi yanıltabilir ya da yanlış yönlendire
 
 Bilim dünyasının üzerine en çok kafa yorduğu teori Quantum Teorisidir. Çok tartışılmış, çok irdelenmiş bir konudur.Kuantim ile ilgili olarak ” Ve bilim tarihinin kaderini değiştiren dahi adam -Albert Einstein- sahneye çıktı. O zamana kadar ışığın dalga mı yoksa parçacık mı olduğunu tartışan bilim adamlarına “neden her ikisi de olmasın” diyen Einstein yepyeni bir alanı, kuantum mekaniğini, dünya bilimine kazandırmış oldu.”
 
-biz-ne-biliyoruz-ki-uykusuzadamBu tarz fizik konuları benim hep ilgimi çekmiştir, bugün de bi belgesel izledim konuyla ilgili fazlasıyla ilgimi çekti, bazı notlar aldım sizinle paylaşıyorum.
+Bu tarz fizik konuları benim hep ilgimi çekmiştir, bugün de bi belgesel izledim konuyla ilgili fazlasıyla ilgimi çekti, bazı notlar aldım sizinle paylaşıyorum.
 
 1- Beyin her saniye 400 milyar bilgiyi işliyor ama biz bunun sadece 2000 tanesinin farkında oluyoruz. Bu da gerçeğin her zaman beynimizin içinde olup bittiği anlamına geliyor. Kısaca herşeyin bağlantılı olması gerçekliğin temel öğesidir diyebiliriz.
 
@@ -23,7 +23,7 @@ Bahsettiğim bu eşsiz belgeselin adı “Down the Robbit Hole”, dünyanın ö
 
 Belgeselin videosunu ekledim, dil ingilizce ama youtube’un altyazı seçeneklerinden Türkçe’yi seçip izleyebilirsiniz. Belgeseli mutlaka izleyin belki doğru bildiğiniz bazı gerçekler yanlış ya da saptırılmış olabilir..
 
-{% youtube "https://www.youtube.com/watch?v=dr51w9892hI" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dr51w9892hI" frameborder="0" allowfullscreen></iframe>
 
 Yazı ile ilgili kaynaklar :
 
