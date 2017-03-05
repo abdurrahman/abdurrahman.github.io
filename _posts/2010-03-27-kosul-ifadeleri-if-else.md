@@ -90,3 +90,43 @@ if (snc > 50) // snc yani ortalamanın 50’den büyük olma durumuna baktık…
 else
   Console.WriteLine(“{0} ortalama yaparak Kaldın…”, snc);
 {% endhighlight %}
+
+## If Terrior Operatörü Kullanımı
+
+#### Genel Syntax
+(Koşul) ? ŞartDoğruiseYapılacakİşlem : ŞartYanlışiseYapılacak
+
+<span style="color:#800000;"><strong> Örnek 6 :</strong></span>
+{% highlight csharp %}
+Console.Write(“Bir sayı giriniz:”);
+int gelen = int.Parse(Console.ReadLine());
+
+Console.WriteLine(“{0} sayısı {1}”, gelen, gelen % 2 == 0 ? “Çifttir” : “Tektir”); // Tek satırda sayının çift mi tek mi olduğuna baktık, bu daha güzel değil mi? :)
+{% endhighlight %}
+
+Son örneğimizi de yapalım konuyu iyi anladık sanırım, burada kavramak sorun değil mantığını bilmek yetiyor, çünkü işi yaptıran biziz, böyleyse bu çalışsın değilse çalışmasın ya da başka bir şey çalışsın, diyebiliriz.
+
+Dışardan (kullanıcıdan) kullanıcı adı ve şifre alalım ve bu gelecek değeri aşağıda verdiğim default değerle üzerinden eşitliğine bakalım, eğer doğru ise “giriş başarılı”, değilse “hatalı giriş yaptınız…” desin, buyrun;
+
+<span style="color:#800000;"><strong> Örnek 6 :</strong></span>
+
+{% highlight csharp %}
+// Username:"admin"
+// Password:"1234"
+
+Console.Write(“Username :”);
+string username = Console.ReadLine();
+Console.Write(“Password :”);
+string password = Console.ReadLine();
+
+if (username == “admin” && password == “1234”)
+{
+  // && ( ve ) operatörüyle gelen username‘in “admin” ve password’ın “1234” ile eşit olma durumuna baktık…
+  Console.WriteLine(“Girişiniz Başarılı…”);
+}
+else
+{
+  // iki değerden ya da her ikisi de yanlış olsa bu bölüm çalışacak…
+  Console.WriteLine(“Hatalı giriş yaptınız…”);
+}
+{% endhighlight %}
