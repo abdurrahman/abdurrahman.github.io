@@ -11,6 +11,8 @@ Bilim dünyasının üzerine en çok kafa yorduğu teori Quantum Teorisidir. Ço
 
 Bu tarz fizik konuları benim hep ilgimi çekmiştir, bugün de bi belgesel izledim konuyla ilgili fazlasıyla ilgimi çekti, bazı notlar aldım sizinle paylaşıyorum.
 
+<img alt="biz-ne-biliyoruz-ki-uykusuzadam" src="{{ site.baseurl }}/assets/biz-ne-biliyoruz-ki-uykusuzadam-211x300.jpg" width="211" height="300" />
+
 1- Beyin her saniye 400 milyar bilgiyi işliyor ama biz bunun sadece 2000 tanesinin farkında oluyoruz. Bu da gerçeğin her zaman beynimizin içinde olup bittiği anlamına geliyor. Kısaca herşeyin bağlantılı olması gerçekliğin temel öğesidir diyebiliriz.
 
 2- Pratik anlamda eğer evrenin düz olduğunu varsayarsak ve pek çok astronomi verisi de onun kesinlikle düz olduğunu gösteriyorsa, eğer tek bir hidrojen atomunun hacmini ya da vakumunu alırsam bu aşağı yukarı 10-eksi 23 kübik santimetreye denk geliyor. Eğer bu vakumun miktarını alıp ondaki gizli enerjiyi alırsam arada tüm yıldızlardaki ve gezegenlerdekinden trilyon kat fazla enerji kalır. Ve eğer bilinç bunun küçük bir parçasını bile kontrol etmemizi sağlıyorsa büyük patlamayı yaratmak hiç zor değil…
