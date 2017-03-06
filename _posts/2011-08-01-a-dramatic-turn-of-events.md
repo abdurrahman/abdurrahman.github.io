@@ -11,7 +11,7 @@ Dream Theater progressive metalin duayenlerinden olan yegane bir gruptur. Benimd
 
 Biz fanlar ne kadar durumu kabullenemesekde -çünkü kolay değil 25 yıllık emek var, grupla özdeşleşmiş bi isim MP yani kendine özgü stiliyle Dream Theater dan başka bi grupta istediğini çalamayacağını düşünüyoruz ki gerçekten öyle- sonuçta bi karar saygı duyulmak zorunda belki de asıl neden bu olmayabilir, özel durumlar olabilir ama Mike gitmeyi seçti ve grup yeni baterist için araştırmalara başladı.
 
-Geçtiğimiz Nisan ayında nihayet "yeni baterist ne zaman seçilecek" sorularına yanıt olarak baterist seçmeleri ile grup cevap vermişoldu. Seçmelerede Mike Mangini kazandığını öğrenince(<a href="http://www.youtube.com/watch?v=2QHMQjH17aw">videosu burda!</a>) DT nin yeni bateristi de belli olmuş oldu. Bunun üzerine hemen yeni albüm için stüdyoya girildi...
+Geçtiğimiz Nisan ayında nihayet "yeni baterist ne zaman seçilecek" sorularına yanıt olarak baterist seçmeleri ile grup cevap vermişoldu. Seçmelerede Mike Mangini kazandığını öğrenince([videosu burda!](http://www.youtube.com/watch?v=2QHMQjH17aw)) DT nin yeni bateristi de belli olmuş oldu. Bunun üzerine hemen yeni albüm için stüdyoya girildi...
 
 Yeni albüme isim olarak "A Dramatic Turn of Events" verildi, çıkış tarihi de 13 Eylül olarak belirlendi. Şarkı listesi de şöyle;<img  alt="" src="{{ site.baseurl }}/assets/dramatic-turn-of-events.jpg" width="320" height="320" />
 
