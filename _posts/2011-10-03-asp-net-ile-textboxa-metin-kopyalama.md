@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET ile textbox'a Metin Kopyalama
+title: ASP.NET ile textbox'a metin kopyalama
 date: 2011-10-03 20:52:52 +02:00
 abstract: Çevremde çok aşırı olarak Call of Duty oynadığım bilinir. FPS hastasıyım türünde de lider olan Call of Duty serisi bu konuda ...
 ---
@@ -19,9 +19,9 @@ Sol altta göründüğü gibi üç farklı çalışma görünümü seçeneği va
 **Ek Bilgi:** Dikkat ederseniz Default.aspx yazan yerde ‘ * ’ işareti bulunmakta bu yaptığınız değişikliği kaydetmediğiniz anlamına gelir diğer deyişle derlemediğiniz…
 
 {% highlight html %}
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GirilenTextiDigerTexteKopyalama.\_Default" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GirilenTextiDigerTexteKopyalama._Default" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "\http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
@@ -47,3 +47,34 @@ Sol altta göründüğü gibi üç farklı çalışma görünümü seçeneği va
 Design’a göre kod göründüğü gibi otomatik gelmiş, yani tam anlamıyla birşey yazmadık ama mimari oluştu, .net’in amacı da bu zaten “az kod, çok iş…”
 
 Eklediğimiz nesnelere özelliklerinden kendimiz isimlendirirsek kod tarafında işimiz daha çabuk ve kolay hallolur, bu amaçla bende 1. textbox’ı “txt_kaynak” diğerini de “txt_hedef” şeklinde isimlendirdim. Aynı şekilde butona da “btn_kopyala” adını verdim. Siz de değişik, daha kolay hatırlayabileceğiniz isimler verebilirsiniz. Bu şekilde kod yazmanız her zaman yararınıza olacaktır, alışkanlık haline getirin. Buraya kadar herşey normal ama biz butona tıkladığımızda şimdilik bi etki gerçekleşmeyecek, çünkü butona yapması gereken işlevi belirlemedik. Bunun için design tarafına geçip butona çift tıklıyoruz.
+
+{% highlight csharp %}
+namespace GirilenTextiDigerTexteKopyalama
+{
+    public partial class _Default : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_kopyala_Click(object sender, EventArgs e)
+        {
+            // 1. textboxa girilen değeri diğerindede butona tıkladığımızda görmek istiyorsak iki textbox'ında text'lerini biribirine eşitlememiz gerekiyor, şöyle ki;
+             txt_hedef.Text = txt_kaynak.Text;
+        }
+    }
+}
+{% endhighlight %}
+
+Görüldüğü üzere buton kendi metodunu oluşturdu, bize de içini doldurmak kaldı..
+
+Ünlü bir Csharp yazılımcı der ki; “yazdığın her satırdan sonra F6 ile uygulamayı derle..!” Yani bunun anlamı bir parmağın devamlı F6 tuşunda olması..
+
+Bizde ustaya uyup uygulamamızı derliyoruz ve herhangi bir exception(hata) almamamız gerekiyor. Bu durumda butona tıklandığında tetikleme ile 1. textbox’daki değeri diğerine yazdırması gerekiyor.
+
+Uygulamayı çalıştırmak için Debug > Start Without Debugging… ya da kısayolu Ctrl+F5’basıp projeyi çalıştırıyoruz..
+
+<img title="text_result" src="{{ site.baseurl }}/assets/text_result.jpg" alt="" width="606" height="165" />
+
+Böylece ilk capsli makalemi de yazmış oldum. İnşaallah daha iyilerini de yazarız, anlatırız, resimleriz… Hürmetler :
