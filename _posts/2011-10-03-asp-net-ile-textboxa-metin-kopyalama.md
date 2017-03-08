@@ -2,7 +2,7 @@
 layout: post
 title: ASP.NET ile textbox'a metin kopyalama
 date: 2011-10-03 20:52:52 +02:00
-abstract: Çevremde çok aşırı olarak Call of Duty oynadığım bilinir. FPS hastasıyım türünde de lider olan Call of Duty serisi bu konuda ...
+abstract: Daha başka nasıl yazabilirdim başlığı bilmiyorum ama en anlaşılır şekli bu olsa gerek.  Birazdan örneği yazmaya başlayınca gerçi ben run-time yazıyorum...
 ---
 Daha başka nasıl yazabilirdim başlığı bilmiyorum ama en anlaşılır şekli bu olsa gerek.  Birazdan örneği yazmaya başlayınca gerçi ben run-time yazıyorum siz okuyunca daha iyi anlayacaksınız. Asp.Net’e giriş tadında bu makalemi umarım beğenirsiniz.
 
@@ -77,4 +77,4 @@ Uygulamayı çalıştırmak için Debug > Start Without Debugging… ya da kısa
 
 <img title="text_result" src="{{ site.baseurl }}/assets/text_result.jpg" alt="" width="606" height="165" />
 
-Böylece ilk capsli makalemi de yazmış oldum. İnşaallah daha iyilerini de yazarız, anlatırız, resimleriz… Hürmetler :
+Böylece ilk capsli makalemi de yazmış oldum. İnşaallah daha iyilerini de yazarız, anlatırız, resimleriz… Hürmetler :)
