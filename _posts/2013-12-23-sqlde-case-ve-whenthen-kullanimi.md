@@ -46,3 +46,7 @@ select (case Color
   else 'Renksiz'
 end) as [Renkler] from Production.Product
 {% endhighlight %}
+
+Burada ürün tablomuzdaki renk kolonumuzu case’e aldık, neticesinde renklerin ingilizce halini türkçeleştirmiş olduk.
+
+Case ile When/Then durumlarını bir önceki dersimizdeki gibi if-else durumu ile de yapabilirdik fakat daha çok kod yazmamız gerekecekti. Herşeyin fazlası zarar diye atalarımızı da anmış olalım.Bence böyle Sql daha güzel, kısaca az kod, çok iş 😉
