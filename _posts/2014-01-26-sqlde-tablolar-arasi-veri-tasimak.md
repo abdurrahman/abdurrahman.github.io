@@ -17,10 +17,10 @@ USE MydatabaseUrun
 
 CREATE TABLE Personel
 (
-PersonelId INT IDENTITY(1,1),
-PersonelAdi nvarchar(50),
-PersonelSoyad nvarchar(50),
-PersonelEmailAdres nvarchar(100)
+  PersonelId INT IDENTITY(1,1),
+  PersonelAdi nvarchar(50),
+  PersonelSoyad nvarchar(50),
+  PersonelEmailAdres nvarchar(100)
 )
 {% endhighlight %}
 Veriyi insert edeceğimiz tablomuzu oluşturduk.
