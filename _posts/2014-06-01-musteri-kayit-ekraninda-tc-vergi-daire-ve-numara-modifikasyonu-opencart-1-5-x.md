@@ -294,19 +294,18 @@ $_['entry_taxno']       = 'Vergi No:';
 
 9- admin/model/sale/costumer.php dosyasını açalım ve aşağıdaki kod bloğunu bulalım,
 {% highlight php %}
-
 $this->db->query("INSERT INTO " . DB_PREFIX . "customer SET firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', fax = '" . $this->db->escape($data['fax']) . "', newsletter = '" . (int)$data['newsletter'] . "', customer_group_id = '" . (int)$data['customer_group_id'] . "', password = '" . $this->db->escape(md5($data['password'])) . "', status = '" . (int)$data['status'] . "', date_added = NOW()");
 {% endhighlight %}
 Aşağıdaki kod ile değiştirelim,
 {% highlight php %}
 
 $this->db->query("INSERT INTO " . DB_PREFIX . "customer SET firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "', tck = '" . $this->db->escape($data['tck']) . "',taxoffice = '" . $this->db->escape($data['taxoffice']) . "',taxno = '" . $this->db->escape($data['taxno']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', fax = '" . $this->db->escape($data['fax']) . "', newsletter = '" . (int)$data['newsletter'] . "', customer_group_id = '" . (int)$data['customer_group_id'] . "', password = '" . $this->db->escape(md5($data['password'])) . "', status = '" . (int)$data['status'] . "', date_added = NOW()");
-
+{% endhighlight %}
 Yine aynı dosyada aşağıdaki kod bloğunu bulalım,
 {% highlight php %}
 
 $this->db->query("UPDATE " . DB_PREFIX . "customer SET firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', fax = '" . $this->db->escape($data['fax']) . "', newsletter = '" . (int)$data['newsletter'] . "', customer_group_id = '" . (int)$data['customer_group_id'] . "', status = '" . (int)$data['status'] . "' WHERE customer_id = '" . (int)$customer_id . "'");
-
+{% endhighlight %}
 Aşağıdaki kod ile değiştirelim,
 {% highlight php %}
 
