@@ -2,7 +2,7 @@
 layout: post
 title:  Ne tesadüf ama...
 date: 2014-04-13 +02:00
-abstract: Visual Studio‘da satır numaraları default olarak kapalı gelmektedir. Kod yazarken kolaylık olması açısından satır numaralarının görünür olması faydalı olacaktır.
+abstract: Ben testlerimi yaptım, çalışır halde olduğu için paylaşıyorum ama bu demek değildir ki yedek almanıza gerek yok, her ihtimale karşı yedeğinizi(veri tabanı dahil) mutlaka alın, her zaman sağlamcı olun...
 ---
 
 Ben testlerimi yaptım, çalışır halde olduğu için paylaşıyorum ama bu demek değildir ki yedek almanıza gerek yok, her ihtimale karşı yedeğinizi(veri tabanı dahil) mutlaka alın, her zaman sağlamcı olun.
@@ -27,101 +27,101 @@ $this->data['entry_taxno'] = $this->language->get('entry_taxno');
 Yine aynı dosyada aşağıdaki satırı bulalım,
 {% highlight php %}
 if (isset($this->error['email'])) {
-            $this->data['error_email'] = $this->error['email'];
-        } else {
-            $this->data['error_email'] = '';
-        }
+    $this->data['error_email'] = $this->error['email'];
+} else {
+    $this->data['error_email'] = '';
+}
 {% endhighlight %}
 
 Altına ekleyelim,
 {% highlight php %}
 if (isset($this->error['tck'])) {
-            $this->data['error_tck'] = $this->error['tck'];
-        } else {
-            $this->data['error_tck'] = '';
-        }
+    $this->data['error_tck'] = $this->error['tck'];
+} else {
+    $this->data['error_tck'] = '';
+}
 if (isset($this->error['taxoffice'])) {
-            $this->data['error_taxoffice'] = $this->error['taxoffice'];
-        } else {
-            $this->data['error_taxoffice'] = '';
-        }
+    $this->data['error_taxoffice'] = $this->error['taxoffice'];
+} else {
+    $this->data['error_taxoffice'] = '';
+}
 if (isset($this->error['tck'])) {
-            $this->data['error_taxno'] = $this->error['taxno'];
-        } else {
-            $this->data['error_taxno'] = '';
-        }
+    $this->data['error_taxno'] = $this->error['taxno'];
+} else {
+    $this->data['error_taxno'] = '';
+}
 {% endhighlight %}
 
 Aynı dosyada çalışmaya devam ediyoruz, aşağıdaki satırı bulalım,
 {% highlight php %}
 if (isset($this->request->post['email'])) {
-            $this->data['email'] = $this->request->post['email'];
-        } else {
-            $this->data['email'] = '';
-        }
+    $this->data['email'] = $this->request->post['email'];
+} else {
+    $this->data['email'] = '';
+}
 {% endhighlight %}
 
 Hemen altına ekliyoruz,
 {% highlight php %}
 if (isset($this->request->post['tck'])) {
-            $this->data['tck'] = $this->request->post['tck'];
-        } else {
-            $this->data['tck'] = '';
-        }
+    $this->data['tck'] = $this->request->post['tck'];
+} else {
+    $this->data['tck'] = '';
+}
 if (isset($this->request->post['taxoffice'])) {
-            $this->data['taxoffice'] = $this->request->post['taxoffice'];
-        } else {
-            $this->data['taxoffice'] = '';
-        }
+    $this->data['taxoffice'] = $this->request->post['taxoffice'];
+} else {
+    $this->data['taxoffice'] = '';
+}
 if (isset($this->request->post['taxno'])) {
-            $this->data['taxno'] = $this->request->post['taxno'];
-        } else {
-            $this->data['taxno'] = '';
-        }
+    $this->data['taxno'] = $this->request->post['taxno'];
+} else {
+    $this->data['taxno'] = '';
+}
 {% endhighlight %}
 
 Bu dosyadaki yapacağımız son güncellemeye geldik, aşağıdaki satırı bulalım,
 {% highlight php %}
 if ($this->model_account_customer->getTotalCustomersByEmail($this->request->post['email'])) {
-           $this->error['warning'] = $this->language->get('error_exists');
-       }
+     $this->error['warning'] = $this->language->get('error_exists');
+ }
 {% endhighlight %}
 
 Hemen altına ekleyelim,
 {% highlight php %}
 if ((strlen(utf8_decode($this->request->post['tck'])) < 3) || (strlen(utf8_decode($this->request->post['tck'])) > 32)) {
-            $this->error['tck'] = $this->language->get('error_tck');
-        }
+    $this->error['tck'] = $this->language->get('error_tck');
+}
 if ((strlen(utf8_decode($this->request->post['taxoffice'])) < 3) || (strlen(utf8_decode($this->request->post['taxoffice'])) > 32)) {
-            $this->error['taxoffice'] = $this->language->get('error_taxoffice');
-        }
+    $this->error['taxoffice'] = $this->language->get('error_taxoffice');
+}
 if ((strlen(utf8_decode($this->request->post['taxno'])) < 3) || (strlen(utf8_decode($this->request->post['taxno'])) > 32)) {
-            $this->error['taxno'] = $this->language->get('error_taxno');
-        }
+    $this->error['taxno'] = $this->language->get('error_taxno');
+}
 {% endhighlight %}
 
 3- catalog/view/theme/default/template/account/register.tpl dosyasını açalım ve alttaki kod bloğunu bulalım,
 {% highlight html %}
-<span class="required">*</span> <!--?php echo $entry_email; ?--><input type="text" name="email" value="<?php echo $email; ?>" />
-              <!--?php if ($error_email) { ?-->
+<span class="required"> * </span> <!--?php echo $entry_email; ?--><input type="text" name="email" value="<?php echo $email; ?>" />
+<!--?php if ($error_email) { ?-->
 
-              <!--?php } ?-->
+<!--?php } ?-->
 {% endhighlight %}
 
 Hemen altına aşağıdaki kod bloğunu ekleyelim.
 {% highlight html %}
-<span class="required">*</span> <!--?php echo $entry_tck; ?--><input type="text" name="tck" value="<?php echo $tck; ?>" />
-              <!--?php if ($error_tck) { ?-->
+<span class="required"> * </span> <!--?php echo $entry_tck; ?--><input type="text" name="tck" value="<?php echo $tck; ?>" />
+<!--?php if ($error_tck) { ?-->
 
-              <!--?php } ?-->
-<span class="required">*</span> <!--?php echo $entry_taxoffice; ?--><input type="text" name="taxoffice" value="<?php echo $taxoffice; ?>" />
-              <!--?php if ($error_taxoffice) { ?-->
+<!--?php } ?-->
+<span class="required"> * </span> <!--?php echo $entry_taxoffice; ?--><input type="text" name="taxoffice" value="<?php echo $taxoffice; ?>" />
+<!--?php if ($error_taxoffice) { ?-->
 
-              <!--?php } ?-->
-<span class="required">*</span> <!--?php echo $entry_taxno; ?--><input type="text" name="taxno" value="<?php echo $taxno; ?>" />
-              <!--?php if ($error_taxno) { ?-->
+<!--?php } ?-->
+<span class="required"> * </span> <!--?php echo $entry_taxno; ?--><input type="text" name="taxno" value="<?php echo $taxno; ?>" />
+<!--?php if ($error_taxno) { ?-->
 
-              <!--?php } ?-->
+<!--?php } ?-->
 {% endhighlight %}
 
 4- catalog/language/turkish/account/register.php dosyasını açalım ve aşağıdaki satırı bulalım,
@@ -160,26 +160,26 @@ Buraya kadar yapılan işlemler sitedeki kayıt formundaki alanlar içindi, aşa
 
 6- admin/view/template/sale/costumer_form.tpl dosyasını açıp aşağıdaki kod bloğunu bulalım,
 {% highlight html %}
-<span class="required">*</span> <!--?php echo $entry_email; ?--><input type="text" name="email" value="<?php echo $email; ?>" />
-                <!--?php if ($error_email) { ?-->
+<span class="required"> * </span> <!--?php echo $entry_email; ?--><input type="text" name="email" value="<?php echo $email; ?>" />
+<!--?php if ($error_email) { ?-->
 
-                <!--?php  } ?-->
+<!--?php  } ?-->
 {% endhighlight %}
 
 Hemen altına ekleyelim,
 {% highlight html %}
-<span class="required">*</span> <!--?php echo $entry_tck; ?--><input type="text" name="tck" value="<?php echo $tck; ?>" />
-                <!--?php if ($error_tck) { ?-->
+<span class="required"> * </span> <!--?php echo $entry_tck; ?--><input type="text" name="tck" value="<?php echo $tck; ?>" />
+<!--?php if ($error_tck) { ?-->
 
-                <!--?php  } ?-->
-<span class="required">*</span> <!--?php echo $entry_taxoffice; ?--><input type="text" name="taxoffice" value="<?php echo $taxoffice; ?>" />
-                <!--?php if ($error_taxoffice) { ?-->
+<!--?php  } ?-->
+<span class="required"> * </span> <!--?php echo $entry_taxoffice; ?--><input type="text" name="taxoffice" value="<?php echo $taxoffice; ?>" />
+<!--?php if ($error_taxoffice) { ?-->
 
-                <!--?php  } ?-->
-<span class="required">*</span> <!--?php echo $entry_taxno; ?--><input type="text" name="taxno" value="<?php echo $taxno; ?>" />
-                <!--?php if ($error_taxno) { ?-->
+<!--?php  } ?-->
+<span class="required"> * </span> <!--?php echo $entry_taxno; ?--><input type="text" name="taxno" value="<?php echo $taxno; ?>" />
+<!--?php if ($error_taxno) { ?-->
 
-                <!--?php  } ?-->
+<!--?php  } ?-->
 {% endhighlight %}
 
 7- admin/controller/sale/costumer.php dosyasını açalım, aşağıdaki satırı bulalım,
@@ -198,88 +198,88 @@ Yine aynı dosyada aşağıdaki kod bloğunu bulalım,
 
 {% highlight php %}
 if (isset($this->error['email'])) {
-            $this->data['error_email'] = $this->error['email'];
-        } else {
-            $this->data['error_email'] = '';
-        }
+    $this->data['error_email'] = $this->error['email'];
+} else {
+    $this->data['error_email'] = '';
+}
 {% endhighlight %}
 
 Hemen altına ekleyelim,
 {% highlight php %}
 
 if (isset($this->error['tck'])) {
-            $this->data['error_tck'] = $this->error['tck'];
-        } else {
-            $this->data['error_tck'] = '';
-        }
+    $this->data['error_tck'] = $this->error['tck'];
+} else {
+    $this->data['error_tck'] = '';
+}
 if (isset($this->error['taxoffice'])) {
-            $this->data['error_taxoffice'] = $this->error['taxoffice'];
-        } else {
-            $this->data['error_taxoffice'] = '';
-        }
+    $this->data['error_taxoffice'] = $this->error['taxoffice'];
+} else {
+    $this->data['error_taxoffice'] = '';
+}
 if (isset($this->error['taxno'])) {
-            $this->data['error_taxno'] = $this->error['taxno'];
-        } else {
-            $this->data['error_taxno'] = '';
-        }
+    $this->data['error_taxno'] = $this->error['taxno'];
+} else {
+    $this->data['error_taxno'] = '';
+}
 {% endhighlight %}
 
 Yine aynı dosyada devam ediyoruz, aşağıdaki kod bloğunu bulalım,
 {% highlight php %}
 if (isset($this->request->post['email'])) {
-            $this->data['email'] = $this->request->post['email'];
-        } elseif (isset($customer_info)) {
-            $this->data['email'] = $customer_info['email'];
-        } else {
-            $this->data['email'] = '';
-        }
+    $this->data['email'] = $this->request->post['email'];
+} elseif (isset($customer_info)) {
+    $this->data['email'] = $customer_info['email'];
+} else {
+    $this->data['email'] = '';
+}
 {% endhighlight %}
 
 Hemen altına ekleyelim,
 
 {% highlight php %}
 if (isset($this->request->post['tck'])) {
-            $this->data['tck'] = $this->request->post['tck'];
-        } elseif (isset($customer_info)) {
-            $this->data['tck'] = $customer_info['tck'];
-        } else {
-            $this->data['tck'] = '';
-        }
+    $this->data['tck'] = $this->request->post['tck'];
+} elseif (isset($customer_info)) {
+    $this->data['tck'] = $customer_info['tck'];
+} else {
+    $this->data['tck'] = '';
+}
 if (isset($this->request->post['taxoffice'])) {
-            $this->data['taxoffice'] = $this->request->post['taxoffice'];
-        } elseif (isset($customer_info)) {
-            $this->data['taxoffice'] = $customer_info['taxoffice'];
-        } else {
-            $this->data['taxoffice'] = '';
-        }
+    $this->data['taxoffice'] = $this->request->post['taxoffice'];
+} elseif (isset($customer_info)) {
+    $this->data['taxoffice'] = $customer_info['taxoffice'];
+} else {
+    $this->data['taxoffice'] = '';
+}
 if (isset($this->request->post['taxno'])) {
-            $this->data['taxno'] = $this->request->post['taxno'];
-        } elseif (isset($customer_info)) {
-            $this->data['taxno'] = $customer_info['taxno'];
-        } else {
-            $this->data['taxno'] = '';
-        }
+    $this->data['taxno'] = $this->request->post['taxno'];
+} elseif (isset($customer_info)) {
+    $this->data['taxno'] = $customer_info['taxno'];
+} else {
+    $this->data['taxno'] = '';
+}
 {% endhighlight %}
 
 Aynı dosyada yapacağımız son güncelleme için aşağıdaki kod bloğunu bulalım;
 {% highlight php %}
 if ((strlen(utf8_decode($this->request->post['email'])) > 96) || !preg_match('/^[^\@]+@.*\.[a-z]{2,6}$/i', $this->request->post['email'])) {
-            $this->error['email'] = $this->language->get('error_email');
-        }
+    $this->error['email'] = $this->language->get('error_email');
+}
 {% endhighlight %}
 
 Hemen altına ekleyelim,
 
 {% highlight php %}
 if ((strlen(utf8_decode($this->request->post['tck'])) < 3) || (strlen(utf8_decode($this->request->post['tck'])) > 32)) {
-            $this->error['tck'] = $this->language->get('error_tck');
-        }
+    $this->error['tck'] = $this->language->get('error_tck');
+}
 if ((strlen(utf8_decode($this->request->post['taxoffice'])) < 3) || (strlen(utf8_decode($this->request->post['taxoffice'])) > 32)) {
-            $this->error['taxoffice'] = $this->language->get('error_taxoffice');
-        }
+    $this->error['taxoffice'] = $this->language->get('error_taxoffice');
+}
 if ((strlen(utf8_decode($this->request->post['taxno'])) < 3) || (strlen(utf8_decode($this->request->post['taxno'])) > 32)) {
-            $this->error['taxno'] = $this->language->get('error_taxno');
-        }
+    $this->error['taxno'] = $this->language->get('error_taxno');
+}
 
 8- admin/language/turkish/sale/costumer.php dosyasını açalım ve alttaki satırı bulalım,
 {% highlight php %}
@@ -296,7 +296,7 @@ $_['entry_taxno']       = 'Vergi No:';
 {% highlight php %}
 
 $this->db->query("INSERT INTO " . DB_PREFIX . "customer SET firstname = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', fax = '" . $this->db->escape($data['fax']) . "', newsletter = '" . (int)$data['newsletter'] . "', customer_group_id = '" . (int)$data['customer_group_id'] . "', password = '" . $this->db->escape(md5($data['password'])) . "', status = '" . (int)$data['status'] . "', date_added = NOW()");
-
+{% endhighlight %}
 Aşağıdaki kod ile değiştirelim,
 {% highlight php %}
 
