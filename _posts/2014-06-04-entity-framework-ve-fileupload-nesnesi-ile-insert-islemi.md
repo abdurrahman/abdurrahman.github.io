@@ -83,4 +83,4 @@ Yazımı bitirmeden önce benim de yaşadığım yukarıdaki ekran görüntüsü
 <img alt="entity-update-uykusuzadam" src="{{ site.baseurl }}/assets/entity-update-uykusuzadam.jpg" width="623" height="554" />
 
 Keyifli kodlamalar
-Abdurrahman.
+Abdurrahman
