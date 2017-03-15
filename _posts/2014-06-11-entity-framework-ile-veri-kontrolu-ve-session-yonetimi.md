@@ -2,7 +2,7 @@
 layout: post
 title:  Entity Framework ile Veri Kontrolü ve Session Yönetimi
 date: 2014-06-11 22:48:48 +02:00
-abstract: En iyi öğrenme yolu herkesin de tavsiye ettiği gibi uygulamalı(proje) olarak öğrenmedir düşüncesiyle hareket ederek yeni başladığım web projemde Entity Framework kullanmaya karar verdim..
+abstract: Entity Framework’ün getirdiği kolaylığı yeni yeni keşfeden biri olarak, hızlıca ilerlemeye devam ediyorum. Daha önceki yazımda da proje bazlı öğrenme yolunda gittiğimi..
 ---
 
 Entity Framework’ün getirdiği kolaylığı yeni yeni keşfeden biri olarak, hızlıca ilerlemeye devam ediyorum. Daha önceki yazımda da proje bazlı öğrenme yolunda gittiğimi ve bunu da her zaman tavsiye ettiğimi belirtmiştim tekrar dile getirmek istiyorum. Bir önceki projemde entity framework kullanmadığım için oradaki kullanıcı kontrolünü yapıp, kayıt varsa session atayıp giriş yapmasını eski yöntem ile yapmıştım. EF’de (artık kısaltalım 🙂 ) bunu nasıl yapabilirim derken daha doğrusu projeye de dahil etmek istediğim bir şeydi ve bu makale ortaya çıkmış oldu, umarım beğenirsiniz, yanlış kavram ve ya yöntem kullanmış olabilir yorum olarak belirtirseniz sevinirim hep beraber öğrenelim.
@@ -74,12 +74,12 @@ insert into Users values ('admin','123456')
 Burada entity framework ile veri kontrolümüzü yapmak için Login.aspx dosyamızın kod tarafına geçiyoruz. Burada veri tabanımızda kullanıcı varsa kullanıcımıza oturum açıp Index.aspx sayfamıza yönlendiriyoruz.
 
 {% highlight csharp %}
-var kullaniciEntity = new MyDbEntities();
+var context = new MyDbEntities();
 protected void send_Click(object sender, EventArgs e)
 {
-  foreach(var userControl in kullaniciEntity.Users)
+  foreach(var user in context.Users)
   {
-    if (userControl.UserName == username.Text && userControl.Password == password.Text)
+    if (user.UserName == username.Text && user.Password == password.Text)
     {
       Session["adminSession"] = username.Text;
       Session.Timeout = 30;
