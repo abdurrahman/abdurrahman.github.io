@@ -10,54 +10,39 @@ Bu yazımda **entity framework** kullanarak nasıl veri tabanına kayıt ekleriz
 **Default.aspx dosyamız;**
 {% highlight csharp %}
 <div id="product-add">
-<h2>Yeni Ürün Ekle</h2>
-<asp:Label runat="server" class="label">Ürün Adı :</asp:Label>
-<asp:TextBox ID="txtUrunAdi" runat="server" class="text" placeholder="Örn: iPhone 5S"></asp:TextBox>
-<asp:RequiredFieldValidator ID="rfvProductName" runat="server"
-ControlToValidate="txtUrunAdi" Display="Dynamic"
-ErrorMessage="Ürün Adı Girmediniz !"></asp:RequiredFieldValidator>
-<br />
-<asp:Label runat="server" class="label">Renk :</asp:Label>
-<asp:TextBox ID="txtRenk" runat="server" class="text" placeholder="Örn: Kırmızı"></asp:TextBox><br />
-<asp:Label runat="server" class="label">Fiyatı :</asp:Label>
-<asp:TextBox ID="txtFiyat" runat="server" class="text" placeholder="Örn: 1500"></asp:TextBox>
-<asp:RegularExpressionValidator ID="revFiyat" runat="server"
-ControlToValidate="txtFiyat" ErrorMessage="Geçerli bir fiyat girin!"
-ValidationExpression="^[0-9]+$"></asp:RegularExpressionValidator>
-<asp:RequiredFieldValidator ID="rfvFiyat" runat="server"
-ControlToValidate="txtFiyat" ErrorMessage="Fiyat Girmediniz!"></asp:RequiredFieldValidator>
-<br />
-<asp:Label runat="server" class="label">Stok Adedi :</asp:Label>
-<asp:TextBox ID="txtStok" runat="server" class="text"></asp:TextBox><br />
-<asp:Label runat="server" class="label">Markası :</asp:Label>
-<asp:DropDownList ID="ddlMarka" runat="server" class="text" ></asp:DropDownList>
-<asp:RequiredFieldValidator ID="rfMarka" runat="server"
-ControlToValidate="ddlMarka" ErrorMessage="Ürünün markasını seçmediniz!"
-InitialValue="Birini seç!"></asp:RequiredFieldValidator>
-<br />
-<asp:Label runat="server" class="label">Resim Ekle :</asp:Label>
-<asp:FileUpload ID="fuResimYukle" runat="server" /><br /><br />
-<asp:Label runat="server" class="label">Teknik Özellikleri :</asp:Label><br /><br />
-<asp:TextBox ID="txtTeknik" runat="server" TextMode="MultiLine" class="textarea"></asp:TextBox>
-<asp:Label ID="lblDurum" runat="server" Text=""></asp:Label>
-<asp:Button ID="btnUrunEkle" Text="Ürün Ekle" runat="server" class="btn"
-onclick="btnUrunEkle_Click" /><br /><br />
+  <h2>Yeni Ürün Ekle</h2>
+  <asp:Label runat="server" class="label">Ürün Adı :</asp:Label>
+  <asp:TextBox ID="txtUrunAdi" runat="server" class="text" placeholder="Örn: iPhone 5S"></asp:TextBox>
+  <asp:RequiredFieldValidator ID="rfvProductName" runat="server" ControlToValidate="txtUrunAdi" Display="Dynamic" ErrorMessage="Ürün Adı Girmediniz !"></asp:RequiredFieldValidator><br />
+  <asp:Label runat="server" class="label">Renk :</asp:Label>
+  <asp:TextBox ID="txtRenk" runat="server" class="text" placeholder="Örn: Kırmızı"></asp:TextBox><br />
+  <asp:Label runat="server" class="label">Fiyatı :</asp:Label>
+  <asp:TextBox ID="txtFiyat" runat="server" class="text" placeholder="Örn: 1500"></asp:TextBox>
+  <asp:RegularExpressionValidator ID="revFiyat" runat="server" ControlToValidate="txtFiyat" ErrorMessage="Geçerli bir fiyat girin!" ValidationExpression="^[0-9]+$"></asp:RegularExpressionValidator>
+  <asp:RequiredFieldValidator ID="rfvFiyat" runat="server" ControlToValidate="txtFiyat" ErrorMessage="Fiyat Girmediniz!"></asp:RequiredFieldValidator><br />
+  <asp:Label runat="server" class="label">Stok Adedi :</asp:Label>
+  <asp:TextBox ID="txtStok" runat="server" class="text"></asp:TextBox><br />
+  <asp:Label runat="server" class="label">Markası :</asp:Label>
+  <asp:DropDownList ID="ddlMarka" runat="server" class="text" ></asp:DropDownList>
+  <asp:RequiredFieldValidator ID="rfMarka" runat="server" ControlToValidate="ddlMarka" ErrorMessage="Ürünün markasını seçmediniz!" InitialValue="Birini seç!"></asp:RequiredFieldValidator><br />
+  <asp:Label runat="server" class="label">Resim Ekle :</asp:Label>
+  <asp:FileUpload ID="fuResimYukle" runat="server" /><br /><br />
+  <asp:Label runat="server" class="label">Teknik Özellikleri :</asp:Label><br /><br />
+  <asp:TextBox ID="txtTeknik" runat="server" TextMode="MultiLine" class="textarea"></asp:TextBox>
+  <asp:Label ID="lblDurum" runat="server" Text=""></asp:Label>
+  <asp:Button ID="btnUrunEkle" Text="Ürün Ekle" runat="server" class="btn" onclick="btnUrunEkle_Click" /><br /><br />
 </div>
 {% endhighlight %}
 
 Bu aspx dosyamızda ben div ve form verileri için bazı css özellikleri kullandım onu da bu açıklamanın hemen altına ekleyeceğim. Kodu incelediğimizde textbox, label ve hataları gösterebilmek için zorunlu alanlar kullanıldığını görüyorsunuz.
 **style.css**
 {% highlight css %}
-#product-add { width:600px; margin:0; padding:20px; position:relative; color:white }
+#product-add { width:600px; margin:0; padding:20px;position:relative; color:white }
 #product-add .label { float:left; width:150px; margin:4px 10px; color:#fff }
 #product-add .text { width:200px; margin-bottom:10px }
 #product-add .textarea { width:300px; display:block }
 #product-add .img { width:150px; height:150px; display:block; }
-#product-add .btn { float:right; margin:10px 0 0 0; width:150px; height:35px; background:#DBA499; color:#222222; font:18px Ubuntu, Sans-Serif;
-border-radius:4px;
--webkit-border-radius:4px;
--moz-border-radius:4px;
-border:0}
+#product-add .btn { float:right; margin:10px 0 0 0; width:150px; height:35px; background:#DBA499; color:#222222; font:18px Ubuntu, Sans-Serif; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; border:0}
 #product-add .btn:hover { border:1px dashed #DBA499; background:#000; color:#DBA499; }
 {% endhighlight %}
 
