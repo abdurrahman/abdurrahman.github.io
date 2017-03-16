@@ -180,6 +180,7 @@ namespace Walltage.Domain.Entities
 }
 {% endhighlight %}
 Bu şekilde kullanım diğer yönteme göre daha kolay gelebilir. Tamamen tercihinize bağlı fakat şu detayı belirtmeliyim ki yukarıda alan özelliklerinin yanı sıra sadece foreign key ilişkisini belirtebildik. Fluent Api ile foreign key ilişkisinin ne şekilde olacağını ve hatta constraint tanımını bile ekleyebiliyoruz. Her iki yönteminde kendine göre avantaj ve dezavantajları var. Bu konuyu yorumlarda tartışabiliriz. Yeni bir yazı da tekrar görüşmek üzere, kendinize iyi bakın ! :)
+
 Örnek Proje Repo: https://github.com/abdurrahman/walltage
 
 *Kaynaklar;*
