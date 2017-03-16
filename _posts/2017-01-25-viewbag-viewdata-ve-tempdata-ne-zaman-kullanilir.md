@@ -2,7 +2,7 @@
 layout: post
 title: ASP.NET MVC uygulamalarında ViewBag, ViewData ve TempData ne zaman kullanılır?
 date: 2017-01-25 23:26:56 +02:00
-abstract: "Ne zaman bir ViewBag/ViewData/TempData nesnesi kullanmalıyım ?"-forumlarda, gruplarda sürekli sorulan ya da tartışılan soru...
+abstract: Ne zaman bir ViewBag/ViewData/TempData nesnesi kullanmalıyım ?-forumlarda, gruplarda sürekli sorulan ya da tartışılan soru...
 ---
 
 **"Ne zaman bir ViewBag/ViewData/TempData nesnesi kullanmalıyım ?"**-forumlarda, gruplarda sürekli sorulan ya da tartışılan soru. Bu nesnelerin arasında, MVC uygulamaları geliştirirken bu nesnelerin her birini tam olarak nasıl kullanabileceğimizi görmek için yeterince benzerlikler ve farklılıklar vardır.
