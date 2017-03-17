@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Place holder(yer tutucu) kavramı
+title: Place Holder(Yer tutucu) Kavramı
 date: 2010-03-15 01:47:00 +02:00
 abstract: Place holder nam-ı diğer yer tutucu, ayrı string değerleri sıralı bir şekilde formatlarken birleştirmemize yarayan bir yöntem.
 ---

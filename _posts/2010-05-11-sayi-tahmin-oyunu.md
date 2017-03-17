@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sayı tahmin oyunu
+title: Sayı Tahmin Oyunu
 date: 2010-05-11 00:30:11 +02:00
 abstract: C#'da döngü üzerine yapılmış örnek bir çalışma olarak sayı tahmin oyunu...
 ---

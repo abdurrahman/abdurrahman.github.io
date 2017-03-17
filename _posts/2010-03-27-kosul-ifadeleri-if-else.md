@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C#'da koşul ifadeleri (if-else)
+title: C#'da Koşul İfadeleri (If-Else)
 date: 2010-03-27 23:00:53 +02:00
 abstract: Biz değeri olan bir değişkenimizi başka bir tipe convert (çevirmek) etmek isteyebiliriz. Örneğin int tipinde tanımladığımız sayı değişkenimizi ihtiyacımıza göre string tipine convert edebiliriz.
 ---

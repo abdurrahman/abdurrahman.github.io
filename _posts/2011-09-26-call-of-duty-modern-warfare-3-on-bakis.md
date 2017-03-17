@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Call of Duty - Modern Warfare 3 ön bakış
+title: Call of Duty - Modern Warfare 3 Ön Bakış
 date: 2011-09-26 21:35:23 +02:00
 abstract: Çevremde çok aşırı olarak Call of Duty oynadığım bilinir. FPS hastasıyım türünde de lider olan Call of Duty serisi bu konuda ...
 ---

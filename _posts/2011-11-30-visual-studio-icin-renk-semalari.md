@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Studio için renk şemaları
+title: Visual Studio İçin Renk Şemaları
 date: 2011-11-30 22:57:59 +02:00
 abstract: Visual Studio kullanan yazılımcıların çoğu gözü yormayan koyu renk code arkaplanı ister, kendince ayarlar da aslında fakat bazı durumlarda değişkenle...
 ---
