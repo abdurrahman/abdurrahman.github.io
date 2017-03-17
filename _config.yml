@@ -4,9 +4,9 @@
 permalink:           /:year/:month/:title.html
 
 # Setup
-title:               uykusuz adam
-tagline:             'uykusuz adam blog'
-description:         '.Net framework, asp.net mvc, javascript and some back-end stuffs from Abdurrahman Işık'
+title:               uykusuzadam blog
+tagline:             'some development practices'
+description:         '.Net framework, asp.net mvc, javascript and some back-end stuffs by Abdurrahman Işık'
 url:                 http://abdurrahman.github.io
 baseurl:             ''
 paginate:            10
