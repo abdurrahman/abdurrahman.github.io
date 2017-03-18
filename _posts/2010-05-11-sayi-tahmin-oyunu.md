@@ -3,6 +3,19 @@ layout: post
 title: Sayı Tahmin Oyunu
 date: 2010-05-11 00:30:11 +02:00
 abstract: C#'da döngü üzerine yapılmış örnek bir çalışma olarak sayı tahmin oyunu...
+published: true
+status: publish
+categories:
+- C#
+tags:
+- C# örnek çalışmalar
+- C#'da sayı tahmin oyunu
+- for döngüsü kullanımı
+- Sayi tahmin oyunu
+meta:
+  dsq_thread_id: '3001744774'
+  views: '2167'
+  dsq_needs_sync: '1'
 ---
 
 {% highlight csharp %}

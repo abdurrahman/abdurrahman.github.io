@@ -3,6 +3,17 @@ layout: post
 title: C#'da Koşul İfadeleri (If-Else)
 date: 2010-03-27 23:00:53 +02:00
 abstract: Biz değeri olan bir değişkenimizi başka bir tipe convert (çevirmek) etmek isteyebiliriz. Örneğin int tipinde tanımladığımız sayı değişkenimizi ihtiyacımıza göre string tipine convert edebiliriz.
+published: true
+status: publish
+categories:
+- C#
+tags:
+- If Terrior Operatörü Kullanımı
+- Koşul İfadeleri If-Else
+meta:
+  views: '665'
+  dsq_needs_sync: '1'
+  dsq_thread_id: '3322618363'
 ---
 
 Programcılar yeni bir dil öğrenirken ya da ilk defa programcı olacaklar için konuşalım, konuyu öğrenmeye başladıklarında anlatılanlar sıkıcı gelebilir. Ta ki **if-else** konusu anlatılana kadar, çünkü işin eğlenceli tarafı daha doğrusu sevdiren tarafı bu başlangıçtır bence.

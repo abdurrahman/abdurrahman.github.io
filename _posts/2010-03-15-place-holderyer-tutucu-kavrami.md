@@ -3,6 +3,18 @@ layout: post
 title: Place Holder(Yer tutucu) Kavramı
 date: 2010-03-15 01:47:00 +02:00
 abstract: Place holder nam-ı diğer yer tutucu, ayrı string değerleri sıralı bir şekilde formatlarken birleştirmemize yarayan bir yöntem.
+published: true
+status: publish
+categories:
+- C#
+tags:
+- Index
+- Place Holder Kavramı
+- yer tutucu
+meta:
+  views: '786'
+  dsq_needs_sync: '1'
+  dsq_thread_id: '3022913455'
 ---
 
 Place holder nam-ı diğer yer tutucu, ayrı string değerleri sıralı bir şekilde formatlarken birleştirmemize yarayan bir yöntem. Kullanım şekli aşağıdaki gibidir.

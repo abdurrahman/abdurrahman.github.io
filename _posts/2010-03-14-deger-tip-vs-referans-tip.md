@@ -2,7 +2,18 @@
 layout: post
 title: Değer tip vs. referans tip
 date: 2010-03-14 23:58:52 +02:00
-abstract: C# dilinde değişkenler Değer Tip(Value Type) ve Referans Tip(Reference Type) ikiye ayrılır, bunlardan özellikleriyle bahsedelim;
+abstract: C# dilinde değişkenler Değer Tip(Value Type) ve Referans Tip(Reference Type) ikiye ayrılır, bunlardan özellikleriyle bahsedelim...
+published: true
+status: publish
+categories:
+- C#
+tags:
+- C# tipleri
+- Value Type vs. Reference Type
+meta:
+  views: '781'
+  dsq_needs_sync: '1'
+  dsq_thread_id: '3133397806'
 ---
 
 C# dilinde değişkenler **Değer Tip(Value Type)** ve **Referans Tip(Reference Type)** ikiye ayrılır, bunlardan özellikleriyle bahsedelim;

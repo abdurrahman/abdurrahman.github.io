@@ -3,6 +3,20 @@ layout: post
 title: Visual Studio’da Satır Numaralarını Gösterme
 date: 2010-02-09 23:53:14 +02:00
 abstract: Visual Studio‘da satır numaraları default olarak kapalı gelmektedir. Kod yazarken kolaylık olması açısından satır numaralarının görünür olması faydalı olacaktır.
+published: true
+status: publish
+categories:
+- ASP.NET
+- C#
+tags:
+- Line Numbers
+- Satır numaralarını gösterme
+- Text Editor
+- Visual Studio
+meta:
+  views: '962'
+  dsq_needs_sync: '1'
+  dsq_thread_id: '3115627270'
 ---
 
 **Visual Studio**‘da satır numaraları default olarak kapalı gelmektedir. Kod yazarken kolaylık olması açısından satır numaralarının görünür olması faydalı olacaktır.

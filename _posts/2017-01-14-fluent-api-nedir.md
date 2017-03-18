@@ -3,6 +3,21 @@ layout: post
 title: Fluent Api Nedir ?
 date: 2017-01-14 00:16:53 +02:00
 abstract: Fluent api'yi basitçe tanımlamak gerekirse (code first yaklaşımı ile) veri tabanı sınıflarını ve ilişkilerini yapılandırabilmenin bir yoludur. Veri tabanları bağlamında bir ilişki, bir tablodaki primary key alanının diğer tablodaki foreign key alanına karşılık gelmesi durumudur...
+published: true
+status: publish
+categories:
+- ASP.NET
+- C#
+tags:
+- code first approach
+- code first mapping
+- code first yaklaşımı
+- fluent api nedir
+- foreign key relations
+- rdbms
+- what is fluent api
+meta:
+  views: '163'
 ---
 
 Fluent api'yi basitçe tanımlamak gerekirse (code first yaklaşımı ile) veri tabanı sınıflarını ve ilişkilerini yapılandırabilmenin bir yoludur. Veri tabanları bağlamında bir ilişki, bir tablodaki **primary key** alanının diğer tablodaki **foreign key** alanına karşılık gelmesi durumudur. İlişkiler (relations), ilişkisel veri tabanların farklı tablolara bölünmesini ve depolanmasını sağlarken, birbirinden farklı veri öğelerini de birbirine bağlar. Böylece, RDBMS yani ilişkisel veri tabanı yönetimi sistemlerinin de tanımını yapmış olduk. Örneğin bir müşteri ve onun siparişleri hakkında bilgi depolamak istersek, biri müşteri (Customer) diğeri sipariş (Order) için iki tablo oluşturmamız gerekir. Bir müşterinin birden fazla siparişi olabileceği için **one-to-many** yani bire çok ilişki kurduğumuzda kolayca siparişlerine ulaşabiliyor olacağız.

@@ -3,6 +3,18 @@ layout: post
 title: C#'da Değişken Kavramı
 date: 2010-03-14 23:42:51 +02:00
 abstract: C# programlama dilinde başlangıç olarak ilk konumuz değişken kavramı olacaktır. Değişkenler ihtiyaca göre tanımlanır, örneğin sayısal bir veri üzerinden derleyiciye iş yaptıracağız, bunun için bizim bellekte bir sayı değişkeni tanımlamamız gerekecek.
+published: true
+status: publish
+categories:
+- C#
+tags:
+- C#'a giriş
+- Değişken Kavramı
+- Değişkenler
+meta:
+  views: '755'
+  dsq_needs_sync: '1'
+  dsq_thread_id: '3045937031'
 ---
 
 C# programlama dilinde başlangıç olarak ilk konumuz değişken kavramı olacaktır. Değişkenler ihtiyaca göre tanımlanır, örneğin sayısal bir veri üzerinden derleyiciye iş yaptıracağız, bunun için bizim bellekte bir sayı değişkeni tanımlamamız gerekecek. Örnek olarak;

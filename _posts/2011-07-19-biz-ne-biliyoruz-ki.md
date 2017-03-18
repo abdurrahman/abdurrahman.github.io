@@ -3,6 +3,28 @@ layout: post
 title: Biz ne biliyoruz ki ? [Belgesel]
 date: 2011-07-19 23:51:31 +02:00
 abstract: Bazen en iyi bildiğimiz şey bile bizi yanıltabilir ya da yanlış yönlendirebilir. Günlük yaşantımızda çok şey öğreniyoruz beyin hergün yeni bilgi(ler) ile kendini tazeliyor...
+published: true
+status: publish
+categories:
+- Hep Uykusuzluk
+- Hobiler
+tags:
+- albert einstien
+- altyazılı belgesel izle
+- beynimizle ilgili
+- Bilinç nedir ?
+- biz ne biliyoruz ki
+- do we know
+- Down the Robbit Hole
+- ilginç bilgiler
+- kuantum teorisi
+- tavşan deliğinden aşağı
+- the theory of quantum
+- what the bleep
+meta:
+  views: '4200'
+  dsq_thread_id: '2998858921'
+  dsq_needs_sync: '1'
 ---
 
 Bazen en iyi bildiğimiz şey bile bizi yanıltabilir ya da yanlış yönlendirebilir. Günlük yaşantımızda çok şey öğreniyoruz beyin hergün yeni bilgi(ler) ile kendini tazeliyor. Ama hala yeterli bilgiye sahip olmadığımız aşikar… Bilgi kaynağı sonsuz olan bir şey ama önemli olan öğrenilen bilginin doğruluğu doğru olmasıdır.

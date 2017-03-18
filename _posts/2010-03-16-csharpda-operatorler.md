@@ -2,7 +2,19 @@
 layout: post
 title: C#'da Operatörler
 date: 2010-03-16 01:32:12 +02:00
-abstract: Her dilde olduğu gibi matematiksel işlemlerimizi operatörler aracılığı ile yaptırırız. Bir de C#’da bu konuya bakalım. Örnek olarak toplama operatör ile toplama işlemini inceleyelim;
+abstract: Her dilde olduğu gibi matematiksel işlemlerimizi operatörler aracılığı ile yaptırırız. Bir de C#’da bu konuya bakalım. Örnek olarak toplama operatör ile toplama işlemini inceleyelim...
+published: true
+status: publish
+categories:
+- C#
+tags:
+- And - Or Operator
+- C#'da Operatörler
+- place holder
+meta:
+  views: '1073'
+  dsq_needs_sync: '1'
+  dsq_thread_id: '3358994188'
 ---
 
 ### Aritmetik Operatörler ( + , – , * , / , % )

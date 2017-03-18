@@ -3,6 +3,21 @@ layout: post
 title: ASP.NET MVC'de Custom Filter Kullanımı
 date: 2015-07-31 01:32:53 +02:00
 abstract: Diyelim ki kurumsal bir web sitesi yapıyorsunuz ve müşterinizin içerik girebileceği, düzenleyebileceği ya da modül ekleyip çıkarabileceği vs. bir yönetim paneline ihtiyacı var...
+published: true
+status: publish
+categories:
+- ASP.NET
+- C#
+tags:
+- Asp.net Filter
+- Asp.net MVC Action Filter
+- Custom Filter
+- FilterAttribute
+- OnActionExecuted
+- OnActionExecuting
+meta:
+  views: '2377'
+  dsq_thread_id: '3988150609'
 ---
 Diyelim ki kurumsal bir web sitesi yapıyorsunuz ve müşterinizin içerik girebileceği, düzenleyebileceği ya da modül ekleyip çıkarabileceği vs. bir yönetim paneline ihtiyacı var. Bu saydığımız işlemlerin bir yönetici tarafından yapılacağı gibi sadece yöneticinin erişebileceği sayfalara yetki kontrolü gerekecek. Böyle bir senaryoda çözümünüz ne olurdu ?
 

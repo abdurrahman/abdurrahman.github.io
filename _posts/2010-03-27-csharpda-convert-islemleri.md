@@ -2,7 +2,19 @@
 layout: post
 title: C#'da Convert(Dönüştürme) İşlemleri
 date: 2010-03-27 22:13:59 +02:00
-abstract: Biz değeri olan bir değişkenimizi başka bir tipe convert (çevirmek) etmek isteyebiliriz. Örneğin int tipinde tanımladığımız sayı değişkenimizi ihtiyacımıza göre string tipine convert edebiliriz.
+abstract: Biz değeri olan bir değişkenimizi başka bir tipe convert (çevirmek) etmek isteyebiliriz. Örneğin int tipinde tanımladığımız sayı değişkenimizi ihtiyacımıza göre string tipine convert edebiliriz...
+published: true
+status: publish
+categories:
+- C#
+tags:
+- C#'da convert işlemleri
+- Cast işlemleri
+- Parse Metodu
+meta:
+  views: '824'
+  dsq_thread_id: '3280958204'
+  dsq_needs_sync: '1'
 ---
 
 Biz değeri olan bir değişkenimizi başka bir tipe **convert** (çevirmek) etmek isteyebiliriz. Örneğin int tipinde tanımladığımız sayı değişkenimizi ihtiyacımıza göre string tipine convert edebiliriz.
