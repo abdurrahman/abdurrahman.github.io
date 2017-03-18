@@ -3,6 +3,21 @@ layout: post
 title: Linq-to-SQL ile Join İşlemleri
 date: 2015-03-03 02:07:03 +02:00
 abstract: Linq to Sql işlemlerinde Join kullanımına değineceğiz, örnek olarak 3 tabloyu birleştirip DataGridView nesnemiz üzerinde nasıl göründüğüne bakacağız. Linq to Sql'de iki farklı şekilde sorgu yazabiliyoruz...
+published: true
+status: publish
+categories:
+- C#
+tags:
+- Join methodu
+- Left join kullanımı
+- Linq ile Join işlemleri
+- Linq ile Join kullanımı
+- Linq to Sql
+- Linq to sql join kullanımı
+- linq to sql left join kullanımı
+meta:
+  views: '2071'
+  dsq_thread_id: '3562091533'
 ---
 
 Linq to Sql işlemlerinde Join kullanımına değineceğiz, örnek olarak 3 tabloyu birleştirip DataGridView nesnemiz üzerinde nasıl göründüğüne bakacağız. Linq to Sql'de iki farklı şekilde sorgu yazabiliyoruz.

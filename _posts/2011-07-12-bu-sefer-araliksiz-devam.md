@@ -3,6 +3,14 @@ layout: post
 title: Bu sefer aralıksız devam...
 date: 2011-07-12 23:17:12 +02:00
 abstract: Sıcak bi temmuz akşamından herkese merhaba :) uzun zamandır blog yazmıyordum ki bu huyumdan bi türlü kurtulamadım...
+published: true
+status: publish
+categories:
+- Hep Uykusuzluk
+tags: []
+meta:
+  views: '734'
+  dsq_thread_id: '3247693205'
 ---
 
 Sıcak bi temmuz akşamından herkese merhaba :) uzun zamandır blog yazmıyordum ki bu huyumdan bi türlü kurtulamadım günlük yazarkende böyleydim :)

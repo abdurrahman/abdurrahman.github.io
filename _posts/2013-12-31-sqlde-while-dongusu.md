@@ -3,6 +3,26 @@ layout: post
 title: SQL'de While Döngüsü
 date: 2013-12-31 02:21:32 +02:00
 abstract: Daha önceki yazılarımızda sırasıyla SQL de değişken, if-else koşul ifadeleri ve case when/then kullanımından söz etmiştik. Bugün ki makalemizde while ...
+published: true
+status: publish
+categories:
+- MS SQL
+tags:
+- Değişkenler
+- döngüler
+- iterasyon nedir
+- kapsamlı örnek
+- sql de kod kavramı
+- sql de while döngüsü
+- sql kurulum problemi
+- sql problemi
+- sql server kurulumu
+- while döngüsü
+- while döngüsü kullanımı
+- while iterasyonu
+meta:
+  dsq_thread_id: '3001306330'
+  views: '7740'
 ---
 
 Daha önceki yazılarımızda sırasıyla SQL de değişken, if-else koşul ifadeleri ve case when/then kullanımından söz etmiştik. Bugün ki makalemizde while iterasyonu neler yapar, nasıl işler bunlardan bahsedeceğiz.

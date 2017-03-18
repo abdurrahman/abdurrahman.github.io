@@ -2,7 +2,17 @@
 layout: post
 title: SQL'de Tablolar Arası Veri Taşımak
 date: 2014-01-26 02:49:02 +02:00
-abstract: Database içindeki bir tablomuzu yine aynı database içerisinde başka bir tabloya taşıyabildiğimiz gibi databaseler arası da bu işlemi yapabiliyoruz....
+abstract: Database içindeki bir tablomuzu yine aynı database içerisinde başka bir tabloya taşıyabildiğimiz gibi databaseler arası da bu işlemi yapabiliyoruz...
+published: true
+status: publish
+categories:
+- MS SQL
+tags:
+- sql veri taşıma
+- tablolar arası veri taşıma
+meta:
+  views: '2245'
+  dsq_thread_id: '3033458655'
 ---
 
 Database içindeki bir tablomuzu yine aynı database içerisinde başka bir tabloya taşıyabildiğimiz gibi databaseler arası da bu işlemi yapabiliyoruz.

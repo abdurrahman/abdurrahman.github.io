@@ -2,7 +2,27 @@
 layout: post
 title:  Entity Framework ve FileUpload Nesnesi ile Insert İşlemi
 date: 2014-06-04 00:31:00 +02:00
-abstract: En iyi öğrenme yolu herkesin de tavsiye ettiği gibi uygulamalı(proje) olarak öğrenmedir düşüncesiyle hareket ederek yeni başladığım web projemde Entity Framework kullanmaya karar verdim..
+abstract: En iyi öğrenme yolu herkesin de tavsiye ettiği gibi uygulamalı(proje) olarak öğrenmedir düşüncesiyle hareket ederek yeni başladığım web projemde Entity Framework kullanmaya karar verdim...
+published: true
+status: publish
+categories:
+- ASP.NET
+- C#
+- MS SQL
+tags:
+- asp.net ile file upload
+- c# dosya yükleme örneği
+- entity framework
+- entity framwork giriş
+- entity model
+- entity model kullanımı
+- file upload
+- file upload with entity framework
+- fileupload nesnesi
+- insert işlemi
+meta:
+  views: '1963'
+  dsq_thread_id: '3018307521'
 ---
 
 En iyi öğrenme yolu herkesin de tavsiye ettiği gibi uygulamalı(proje) olarak öğrenmedir düşüncesiyle hareket ederek yeni başladığım web projemde Entity Framework kullanmaya karar verdim. Kolaylığı görünce şaşırdığımı söylemeliyim, kesinlikle tavsiye ederim. Entity Framework’e geçipte eski yöntemi kullanan yoktur sanırım. Bir kere her seferinde connection bağlantısı yazmıyorsunuz gerçi bunun Entity Framework olmadan da kolaylığı var web.config dosyasına yazmak gibi aslında Entity Framework bunu sizin yerinize zaten yapıyor. O zaman şöyle diyelim her seferinde connection açıp kapatmakla uğraşmıyorsunuz.

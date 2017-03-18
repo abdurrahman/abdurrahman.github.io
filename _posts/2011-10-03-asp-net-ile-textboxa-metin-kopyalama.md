@@ -3,6 +3,21 @@ layout: post
 title: ASP.NET ile TextBox'a Metin Kopyalama
 date: 2011-10-03 20:52:52 +02:00
 abstract: Daha başka nasıl yazabilirdim başlığı bilmiyorum ama en anlaşılır şekli bu olsa gerek.  Birazdan örneği yazmaya başlayınca gerçi ben run-time yazıyorum...
+published: true
+status: publish
+categories:
+- ASP.NET
+tags:
+- asp.net textbox örneği
+- asp.net'te metin kopyalama
+- asp.net'te textbox kullanımı
+- textbox üzerindeki yazıyı kopyalama
+- textbox'tan textbox'a metin kopyalama
+- textboxlar arası yazı kopyalama
+meta:
+  views: '1396'
+  dsq_thread_id: '3008268770'
+  dsq_needs_sync: '1'
 ---
 Daha başka nasıl yazabilirdim başlığı bilmiyorum ama en anlaşılır şekli bu olsa gerek.  Birazdan örneği yazmaya başlayınca gerçi ben run-time yazıyorum siz okuyunca daha iyi anlayacaksınız. Asp.Net’e giriş tadında bu makalemi umarım beğenirsiniz.
 

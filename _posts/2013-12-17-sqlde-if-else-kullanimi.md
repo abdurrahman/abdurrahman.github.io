@@ -2,7 +2,16 @@
 layout: post
 title:  SQL'de If Else Kullanımı
 date: 2013-12-17 01:51:21 +02:00
-abstract: Merhabalar, bu makalemizde SQL tarafında If-Else koşul ifadelerini anlatmaya çalışacağım. If-Else koşul ifadelerimiz çoğu yazılım dilinde kullanıldığı gibi burada da aynı mantıkta çalışır....
+abstract: Merhabalar, bu makalemizde SQL tarafında If-Else koşul ifadelerini anlatmaya çalışacağım. If-Else koşul ifadelerimiz çoğu yazılım dilinde kullanıldığı gibi burada da aynı mantıkta çalışır...
+published: true
+status: publish
+categories:
+- MS SQL
+tags:
+- Sql'de if else kullanımı
+meta:
+  views: '21346'
+  dsq_thread_id: '2999049041'
 ---
 
 Merhabalar, bu makalemizde SQL tarafında If-Else koşul ifadelerini anlatmaya çalışacağım. If-Else koşul ifadelerimiz çoğu yazılım dilinde kullanıldığı gibi burada da aynı mantıkta çalışır.

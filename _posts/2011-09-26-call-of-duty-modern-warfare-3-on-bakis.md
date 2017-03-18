@@ -3,6 +3,18 @@ layout: post
 title: Call of Duty - Modern Warfare 3 Ön Bakış
 date: 2011-09-26 21:35:23 +02:00
 abstract: Çevremde çok aşırı olarak Call of Duty oynadığım bilinir. FPS hastasıyım türünde de lider olan Call of Duty serisi bu konuda ...
+published: true
+status: publish
+categories:
+- Hobiler
+tags:
+- Call of duty killstreak
+- Call of duty serisi
+- Modern Warfare 3
+- Modern Warfare 3 geliyor
+meta:
+  views: '1312'
+  dsq_thread_id: '3511359056'
 ---
 
 Çevremde çok aşırı olarak Call of Duty oynadığım bilinir. FPS hastasıyım türünde de lider olan Call of Duty serisi bu konuda vazgeçilmezim diyebilirim. Yaklaşık 1,5 senedir multiplayer oynuyorum bunun yarısını CoD 4 MW diğer yarısını da CoD 6 – MW2 kapsıyor. Grafik olsun,ses olsun, oyun ayarları yaparken ki Hans Zimmer müzikleri olsun 4×4 lük bir emeğin tüketicisi olmak gurur verici… Abartı gelebilir ama bu övgüyü hakediyor.

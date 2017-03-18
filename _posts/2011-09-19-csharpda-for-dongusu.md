@@ -2,7 +2,19 @@
 layout: post
 title: C#'da For Döngüsü
 date: 2011-09-19 23:45:07 +02:00
-abstract: SQL(Structured Query Language) yapılandırılmış sorgu dili olarak çevirilir. Kısaca tanımlamak gerekirse bir veritabanı oluşturmak, ve bu veritabanında bilgiler saklamak,...
+abstract: C#'da for döngüsünü inceliyoruz. Kullanımı ve örnekler...
+published: true
+status: publish
+categories:
+- C#
+tags:
+- C#'da for döngüsü
+- for döngüsü c#
+- For döngüsü örnekler
+- örneklerle for döngüsü
+meta:
+  views: '1115'
+  dsq_thread_id: '3087958561'
 ---
 
 ### Genel Syntax

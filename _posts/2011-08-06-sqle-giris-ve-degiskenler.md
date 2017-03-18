@@ -2,7 +2,19 @@
 layout: post
 title: SQL'e Giriş ve Değişkenler
 date: 2011-08-06 16:24:21 +02:00
-abstract: SQL(Structured Query Language) yapılandırılmış sorgu dili olarak çevirilir. Kısaca tanımlamak gerekirse bir veritabanı oluşturmak, ve bu veritabanında bilgiler saklamak,...
+abstract: SQL(Structured Query Language) yapılandırılmış sorgu dili olarak çevirilir. Kısaca tanımlamak gerekirse bir veritabanı oluşturmak, ve bu veritabanında bilgiler saklamak...
+published: true
+status: publish
+categories:
+- MS SQL
+tags:
+- Değişken tanımlama
+- Sql'de değikenler
+- SQL'de değişken kullanımı
+- Sql'e giriş ve değişkenler
+meta:
+  views: '2018'
+  dsq_thread_id: '3027168347'
 ---
 
 SQL(Structured Query Language) yapılandırılmış sorgu dili olarak çevirilir. Kısaca tanımlamak gerekirse bir veritabanı oluşturmak, ve bu veritabanında bilgiler saklamak, istenildiğinde de bu bilgilere ulaşmak için kullanılan platformdur diyebiliriz.

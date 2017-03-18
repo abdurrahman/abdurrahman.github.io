@@ -3,6 +3,21 @@ layout: post
 title: Visual Studio İçin Renk Şemaları
 date: 2011-11-30 22:57:59 +02:00
 abstract: Visual Studio kullanan yazılımcıların çoğu gözü yormayan koyu renk code arkaplanı ister, kendince ayarlar da aslında fakat bazı durumlarda değişkenle...
+published: true
+status: publish
+categories:
+- ASP.NET
+- C#
+tags:
+- Color Schemes for Visual Studio
+- studiostyl.es schemes
+- visual studio için hazır arkaplan
+- visual studio renk şemaları
+- VS 2008 Color Schemes
+- vs için hazır renk ayarı
+meta:
+  views: '1479'
+  dsq_thread_id: '3006849703'
 ---
 
 Visual Studio kullanan yazılımcıların çoğu gözü yormayan koyu renk code arkaplanı ister, kendince ayarlar da aslında fakat bazı durumlarda değişkenler metodlar vs. renkleri anlaşılması için iyiden iyiye istenilen renk elde edilemez, haliyle bu durum bazen sinir bozucu olup eski beyaz ekran haline getirilebilir.

@@ -2,7 +2,22 @@
 layout: post
 title: Asp.Net'de Dinamik Olarak Title ve Meta Tagi Belirleme
 date: 2014-10-28 23:40:02 +02:00
-abstract: Asp.Net ile proje geliştirmeye başlayanlar için bir süre sonra kullanıma ihtiyaç duyacağınız "dinamik olarak sayfamıza ya da sayfalarımıza meta tagi nasil ekleriz?" sorusunu cevaplıyor olacağız. Proje geliştirirken senaryomuz şöyle olabilir; kurumsal bir web sitesi ...
+abstract: Asp.Net ile proje geliştirmeye başlayanlar için bir süre sonra kullanıma ihtiyaç duyacağınız "dinamik olarak sayfamıza ya da sayfalarımıza meta tagi nasil ekleriz?" sorusunu cevaplıyor olacağız. Proje geliştirirken senaryomuz şöyle olabilir; kurumsal bir web sitesi...
+published: true
+status: publish
+categories:
+- ASP.NET
+- C#
+tags:
+- asp.net description
+- asp.net meta tagları
+- asp.net title
+- dinamik anahtar kelime
+- dinamik meta tagları
+- seo uyumlu asp.net
+meta:
+  views: '1684'
+  dsq_thread_id: '3166798719'
 ---
 Asp.Net ile proje geliştirmeye başlayanlar için bir süre sonra kullanıma ihtiyaç duyacağınız "dinamik olarak sayfamıza ya da sayfalarımıza meta tagi nasil ekleriz?" sorusunu cevaplıyor olacağız. Proje geliştirirken senaryomuz şöyle olabilir; kurumsal bir web sitesi tasarlıyoruz ve anasayfa ve alt sayfaların meta taglari birbirlerinde bağımsız olsun diyebiliriz. Ya da bir admin panelimiz var ve kullanıcının admin panelinden istediği zaman meta taglarini guncelleyebilmesini isteyebiliriz. Bu işlemin .Net 3.5 ve .Net 4.0 ile kullanımı için buyrun örneklerimizi inceleyelim.
 

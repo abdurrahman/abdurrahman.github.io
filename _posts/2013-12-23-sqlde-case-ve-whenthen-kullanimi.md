@@ -3,6 +3,22 @@ layout: post
 title: SQL'de Case ve When/Then Kullanımı
 date: 2013-12-23 03:31:47 +02:00
 abstract: Sql Server üzerinde yaptığımız işlerde, yine kod tarafında çok büyük bir kolaylık sağlayan case ve when/then kullanımına değineceğiz. Nasıl çalıştığına bir baka...
+published: true
+status: publish
+categories:
+- MS SQL
+tags:
+- case ve when/then kullanımı
+- kolay sql öğrenme
+- sql kolaylıkları
+- sql server case
+- sqlde case when
+- switch case kullanımı
+- veritabanı geliştirme
+- when ve then sql
+meta:
+  views: '23702'
+  dsq_thread_id: '3001035059'
 ---
 
 Sql Server üzerinde yaptığımız işlerde, yine kod tarafında çok büyük bir kolaylık sağlayan case ve when/then kullanımına değineceğiz. Nasıl çalıştığına bir bakalım;

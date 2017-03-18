@@ -2,7 +2,21 @@
 layout: post
 title:  Entity Framework ile Insert Kullanımı
 date: 2014-06-18 23:35:36 +02:00
-abstract: En iyi öğrenme yolu herkesin de tavsiye ettiği gibi uygulamalı(proje) olarak öğrenmedir düşüncesiyle hareket ederek yeni başladığım web projemde Entity Framework kullanmaya karar verdim..
+abstract: Bu yazımda entity framework kullanarak nasıl veri tabanına kayıt ekleriz onu anlatmaya çalışacağım. Visual Studio'larımız açıksa hemen başlayabiliriz...
+published: true
+status: publish
+categories:
+- ASP.NET
+- C#
+- MS SQL
+tags:
+- entity model
+- insert data
+- insert kullanımı
+- veri tabanına kayıt
+meta:
+  dsq_thread_id: '3004428774'
+  views: '2128'
 ---
 
 Bu yazımda **entity framework** kullanarak nasıl veri tabanına kayıt ekleriz onu anlatmaya çalışacağım. Visual Studio'larımız açıksa hemen başlayabiliriz.

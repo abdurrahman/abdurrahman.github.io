@@ -3,6 +3,21 @@ layout: post
 title: BBC Inside Facebook Belgeseli TR
 date: 2012-01-19 23:49:31 +02:00
 abstract: Konu olarak ilgimi çeken hikayelerden biri de Facebook’un kuruluşudur. Bütün dünyaya mal olmuş bi oluşuma sahip olmak biz yazılımcıları kıskanmaktan çok...
+published: true
+status: publish
+categories:
+- Hep Uykusuzluk
+- İnternet
+tags:
+- BBC Facebook Belgeseli
+- Facebook Belgeseli izle
+- Facebook Belgeseli Türkçe Altyazılı
+- Inside Facebook
+- Inside Facebook online izle
+- Mark Zukerberg Belgeseli
+meta:
+  views: '1240'
+  dsq_thread_id: '3175576184'
 ---
 
 Konu olarak ilgimi çeken hikayelerden biri de Facebook’un kuruluşudur. Bütün dünyaya mal olmuş bi oluşuma sahip olmak biz yazılımcıları kıskanmaktan çok kızdırmıyor değil :)

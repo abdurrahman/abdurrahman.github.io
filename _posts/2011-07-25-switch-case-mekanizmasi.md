@@ -3,6 +3,15 @@ layout: post
 title: Switch-Case Mekanizması
 date: 2011-07-25 22:55:50 +02:00
 abstract: Switch-case mekanizması if else döngüsünün aynısıdır, buradaki tek fark şudur; if döngüsünde kod bloğu çalıştığında program her if bloğuna uğrayacaktır, Switch-Case mekanizmasında...
+published: true
+status: publish
+categories:
+- C#
+tags:
+- Switch-Case Mekanizması
+meta:
+  views: '736'
+  dsq_thread_id: '3459589804'
 ---
 
 Switch-case mekanizması yapı olarak if-else koşul ifadelerinin aynısıdır, buradaki tek fark şudur; if döngüsünde kod bloğu çalıştığında program her if bloğuna uğrayacaktır, Switch-Case mekanizmasında ise koşul parantezindeki şarta bağlı olarak ilgili case: bloğuna girip işlemi bitirecektir.

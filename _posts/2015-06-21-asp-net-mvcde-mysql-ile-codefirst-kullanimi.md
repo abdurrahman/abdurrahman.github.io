@@ -2,7 +2,22 @@
 layout: post
 title: ASP.NET MVC'de MySQL ile Code First Kullanımı
 date: 2015-06-21 17:11:48 +02:00
-abstract: Fluent api'yi basitçe tanımlamak gerekirse (code first yaklaşımı ile) veri tabanı sınıflarını ve ilişkilerini yapılandırabilmenin bir yoludur. Veri tabanları bağlamında bir ilişki, bir tablodaki primary key alanının diğer tablodaki foreign key alanına karşılık gelmesi durumudur...
+abstract: EntityFramework yapısı bizlere Code First, Model First ve Database First olmak üzere 3 farklı yaklaşım sunar. Bu makalemizde Code First yaklaşımının MySQL ile kullanımını inceliyor olacağız. Öncelikle bilgisayarımızda MySQL Server ve MySQL connector'un kurulu olması gerekiyor...
+published: true
+status: publish
+categories:
+- ASP.NET
+- C#
+tags:
+- asp.net mvc code first
+- code first with mysql
+- entity framework code first
+- migration
+- mysql code first
+- sql generator
+meta:
+  views: '4144'
+  dsq_thread_id: '3866832539'
 ---
 
 EntityFramework yapısı bizlere **Code First, Model First** ve **Database First** olmak üzere 3 farklı yaklaşım sunar. Bu makalemizde Code First yaklaşımının MySQL ile kullanımını inceliyor olacağız. Öncelikle bilgisayarımızda MySQL Server ve MySQL connector'un kurulu olması gerekiyor. Gerekli linkler aşağıdaki gibidir;

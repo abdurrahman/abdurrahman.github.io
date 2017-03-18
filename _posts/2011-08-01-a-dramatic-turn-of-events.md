@@ -3,6 +3,15 @@ layout: post
 title: A Dramatic Turn of Events
 date: 2011-08-01 23:07:06 +02:00
 abstract: Dream Theater progressive metalin duayenlerinden olan yegane bir gruptur. Benimde çok yakından takip edip severek dinlediğim bu grubun bende yeri ayrıdır...
+published: true
+status: publish
+categories:
+- Hobiler
+tags: []
+meta:
+  views: '719'
+  dsq_thread_id: '3440869710'
+  dsq_needs_sync: '1'
 ---
 
 Dream Theater progressive metalin duayenlerinden olan yegane bir gruptur. Benimde çok yakından takip edip severek dinlediğim bu grubun bende yeri ayrıdır. Kısaca bütün dinlediğim müzikler bi yana DT bi yana diyebilirim.
