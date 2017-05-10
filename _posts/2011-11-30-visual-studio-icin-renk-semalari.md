@@ -20,9 +20,7 @@ meta:
   dsq_thread_id: '3006849703'
 ---
 
-Visual Studio kullanan yazılımcıların çoğu gözü yormayan koyu renk code arkaplanı ister, kendince ayarlar da aslında fakat bazı durumlarda değişkenler metodlar vs. renkleri anlaşılması için iyiden iyiye istenilen renk elde edilemez, haliyle bu durum bazen sinir bozucu olup eski beyaz ekran haline getirilebilir.
-
-İşte tam bu noktada hazır ayarlı renk şemaların olduğu [bu sitede]("http://studiostyl.es/") size uygun renk şemanızı indirip IDE’nize yükleyebilirsiniz. Ayrıca kendiniz de renk şemanızı tasarlayıp yayınlayabilirsiniz.
+Hazır ayarlı renk şemaların olduğu [bu sitede]("http://studiostyl.es/") size uygun renk şemanızı indirip IDE’nize yükleyebilirsiniz. Ayrıca kendiniz de renk şemanızı tasarlayıp yayınlayabilirsiniz.
 
 IDE’ye indirdiğim şemayı nasıl yüklerim diyenler içinse;
 
