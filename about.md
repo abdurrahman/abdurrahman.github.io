@@ -3,10 +3,13 @@ layout: page
 title: About me
 ---
 
-Abdurrahman Işık
+Merhaba ben Abdurrahman, [Projet Yazılım](https://www.projetgrup.com/)'da yazılım geliştirici olarak çalışıyorum. Uzmanlık alanım .NET/C# ve bilimum Microsoft teknolojileri olsada Node.js ve Ruby ile çeşitli uygulamalar yapıyorum.(Henüz sonuçlanmadılar). Öğendiklerimi paylaşmayı seviyorum ve keşke daha düzenli yazabilsem ama malum yoğun dönemi olmayan yazılımcı ben görmedim, duymadım. 
 
-Shortly, just a tech like Elliot Alderson ;)
+Boş zamanlarımda amatör olarak gitar çalıyorum ve fotoğrafçılıkla ilgileniyorum. 
 
+Bana ulaşabileceğiniz mail adresim ve takip etmek isterseniz aktif olarak kullandığım sosyal ağ hesaplarım:
+
+* isikabdurrahman[at]yahoo.com
 * [GitHub](http://github.com/abdurrahman)
 * [Twitter](https://twitter.com/xJason21)
 * [Instagram](https://instagram.com/xJason21)
