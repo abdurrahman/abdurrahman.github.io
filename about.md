@@ -3,16 +3,16 @@ layout: page
 title: About me
 ---
 
-Merhaba ben Abdurrahman, özel bir firmada yazılım geliştirici olarak çalışıyorum. Uzmanlık alanım .NET/C# ve bilimum Microsoft teknolojileri olsada Node.js ve Ruby ile çeşitli uygulamalar yapıyorum.(Henüz sonuçlanmadılar). Öğendiklerimi paylaşmayı seviyorum ve keşke daha düzenli yazabilsem ama malum yoğun dönemi olmayan yazılımcı ben görmedim, duymadım. 
+# Abdurrahman Işık
 
-Boş zamanlarımda amatör olarak gitar çalıyorum ve fotoğrafçılıkla ilgileniyorum.
+Howdy! I'm a software developer who lives in Istanbul, TR. I am playing guitar as an amateur in my free time and am interested in photography. I love video games and sharing what i've learn about development stuffs.
 
-Bana ulaşabileceğiniz mail adresim ve takip etmek isterseniz aktif olarak kullandığım sosyal ağ hesaplarım:
+If you'd like to work with me on something, i am open to contacts about freelancing. Feel free to get in touch!
 
-* isikabdurrahman[at]yahoo.com
+* Blog : uykusuzadam[at]yandex.com
+* Personal: isikabdurrahman[at]yahoo.com
 * [GitHub](http://github.com/abdurrahman)
 * [Twitter](https://twitter.com/xJason21)
-* [Instagram](https://instagram.com/xJason21)
 * [LinkedIn](https://www.linkedin.com/in/isikabdurrahman)
 * [Soundcloud](https://soundcloud.com/xJason21)
 
