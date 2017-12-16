@@ -23,7 +23,7 @@ meta:
   views: '3288'
 ---
 
-Entity Framework’ün getirdiği kolaylığı yeni yeni keşfeden biri olarak, hızlıca ilerlemeye devam ediyorum. Daha önceki yazımda da proje bazlı öğrenme yolunda gittiğimi ve bunu da her zaman tavsiye ettiğimi belirtmiştim tekrar dile getirmek istiyorum. Bir önceki projemde entity framework kullanmadığım için oradaki kullanıcı kontrolünü yapıp, kayıt varsa session atayıp giriş yapmasını eski yöntem ile yapmıştım. EF’de (artık kısaltalım 🙂 ) bunu nasıl yapabilirim derken daha doğrusu projeye de dahil etmek istediğim bir şeydi ve bu makale ortaya çıkmış oldu, umarım beğenirsiniz, yanlış kavram ve ya yöntem kullanmış olabilir yorum olarak belirtirseniz sevinirim hep beraber öğrenelim.
+Entity Framework’ün getirdiği kolaylığı yeni yeni keşfeden biri olarak, hızlıca ilerlemeye devam ediyorum. Daha önceki yazımda da proje bazlı öğrenme yolunda gittiğimi ve bunu da her zaman tavsiye ettiğimi belirtmiştim tekrar dile getirmek istiyorum. Bir önceki projemde entity framework kullanmadığım için oradaki kullanıcı kontrolünü yapıp, kayıt varsa session atayıp giriş yapmasını eski yöntem ile yapmıştım. EF’de (artık kısaltalım 🙂 ) bunu nasıl yapabilirim derken daha doğrusu projeye de dahil etmek istediğim bir şeydi ve bu makale ortaya çıkmış oldu, umarım beğenirsiniz. Yanlış kavram ve ya yöntem kullanmış olabilirim, yorumlarda bunu belirtirseniz sevinirim, hep beraber öğrenelim.
 
 İlk adım veri kontrolü olacağı için veri tabanımızda kullanıcı tablomuzu oluşturalım ve ardından bir kayıt ekleyelim.
 
@@ -39,7 +39,7 @@ insert into Users values ('admin','123456')
 
 Şimdi sırada giriş sayfamızın form verilerini oluşturmak için **Login.aspx** adında yeni bir web form ekleyelim. Dipnot olarak ben tasarım tarafına vakit ayıramadığım için genelde hoşuma giden tasarımları koda dökmeyi tercih ediyorum. Burada hazır dökülmüşü var :D Burada tasarım olarak ben psdup.com'dan bir yönetim paneli tasarımı seçtim, sizde kullanmak isterseniz indirmek için resme tıklayabilirsiniz. Diğer login panel tasarımları için www.psdup.com'u ziyaret edebilirsiniz.
 
-<a href="http://www.psdup.com/?dl_id=61"><img class="alignnone" src="{{ site.baseurl }}/assets/yonetici-girisi-klasik.jpg" alt="" width="580" height="190" /></a>
+<img class="alignnone" src="{{ site.baseurl }}/assets/yonetici-girisi-klasik.jpg" alt="" width="580" height="190" />
 
 {% highlight html %}
 <html lang="tr">
@@ -92,22 +92,25 @@ insert into Users values ('admin','123456')
 Burada entity framework ile veri kontrolümüzü yapmak için Login.aspx dosyamızın kod tarafına geçiyoruz. Burada veri tabanımızda kullanıcı varsa kullanıcımıza oturum açıp Index.aspx sayfamıza yönlendiriyoruz.
 
 {% highlight csharp %}
-var context = new MyDbEntities();
 protected void send_Click(object sender, EventArgs e)
 {
-  foreach(var user in context.Users)
-  {
-    if (user.UserName == username.Text && user.Password == password.Text)
+    using(var context = new MyDbEntities())
     {
-      Session["adminSession"] = username.Text;
-      Session.Timeout = 30;
-      Response.Redirect("Index.aspx");
+        var username = username.Text;
+        var password = password.Text;
+        var isUserValid = context.Users.Any(x => x.UserName == username && x.Password == password);
+        if(isUserValid)
+        {      
+            Session["adminSession"] = username.Text;
+            Session.Timeout = 30;
+            Response.Redirect("Index.aspx"); 
+        }
+        else
+        {
+            username.Text = "";
+            password.Text = "";
+        }
     }
-    else {
-      username.Text = "";
-      password.Text = "";
-    }
-  }
 }
 {% endhighlight %}
 
