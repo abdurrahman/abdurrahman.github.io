@@ -101,7 +101,7 @@ protected void send_Click(object sender, EventArgs e)
         var isUserValid = context.Users.Any(x => x.UserName == username && x.Password == password);
         if(isUserValid)
         {      
-            Session["adminSession"] = username.Text;
+            Session["adminSession"] = username;
             Session.Timeout = 30;
             Response.Redirect("Index.aspx"); 
         }
