@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET MVC Uygulamalarında ViewBag, ViewData ve TempData Ne Zaman Kullanılır?
+title: ASP.NET MVC'de ViewBag, ViewData ve TempData Ne Zaman Kullanılır?
 date: 2017-01-25 23:26:56 +02:00
 abstract: Bu nesnelerin arasında, MVC uygulamaları geliştirirken bu nesnelerin her birini tam olarak nasıl kullanabileceğimizi görmek için yeterince benzerlikler ve farklılıklar vardır...
 published: true
@@ -150,4 +150,4 @@ Büyük olasılıkla bu ve benzeri senaryolara uygulama geliştirme sürecinde g
 ### Özet
 ViewData ve ViewBag nesneleri, modelinizin yanında view'a giden bazı ekstra verilere erişmenin yollarını sunar. Ancak daha karmaşık veriler için ViewModel'e geçebilirsiniz. TempData diğer yandan **HTTP** yönlendirmelerinde veriler ile çalışmak için özel olarak tasarlanmıştır, bu nedenle TempData kullanırken temkinli olmayı unutmayın.
 
-*Bu makale Rachel Appel'ın [When to use ViewBag, ViewData, or TempData in ASP.NET MVC 3 applications](http://rachelappel.com/when-to-use-viewbag-viewdata-or-tempdata-in-asp.net-mvc-3-applications/) adlı makalesinden özel izin alınarak Türkçe'ye çevrilmiştir.*
+*Bu makale Rachel Appel'ın 2 Ocak 2014 tarihli [When to use ViewBag, ViewData, or TempData in ASP.NET MVC 3 applications](http://rachelappel.com/when-to-use-viewbag-viewdata-or-tempdata-in-asp.net-mvc-3-applications/) adlı makalesinden izin alınarak Türkçe'ye çevrilmiştir.*
