@@ -24,11 +24,11 @@ EntityFramework yapısı bizlere **Code First, Model First** ve **Database First
 
 - [MySQL Community Server 5.6.25](http://dev.mysql.com/downloads/mysql/)
 - [MySQL Connector/Net 6.9.6](https://dev.mysql.com/downloads/connector/net/6.9.html)
-- [MySQL Workbench 6.3.4](https://dev.mysql.com/downloads/workbench/)
+- [MySQL Workbench 6.3.4](https://dev.mysql.com/downloads/workbench/) (Zorunlu değil)
 
-<p class="message">Veritabanı uygulaması olarak bilgisayarınızda Wamp Server ve benzeri uygulama kurulu olabilir, indirmeniz gerekmiyor.<p>
+<p class="message">Veritabanı uygulaması olarak, bilgisayarınızda Wamp Server ve ya MySQL destekli benzeri bir uygulama kurulu olabilir, bu durumda Workbench'i indirmeniz gerekmiyor.<p>
 
-Connector kurulumunu yaptıktan sonra Visual Studio ile yeni bir MVC projesi açıyoruz, sonrasında Code First için EntityFramwork'u, MySQL içinde data ve entity kütüphanelerini yüklüyoruz. Bunun için proje içerisinde Nuget üzerinden arama yapabilirsiniz ya da Nuget Package Manager konsolu üzerinden sırasıyla aşağıdaki şekilde yazıp da yükleyebilirsiniz.
+Connector kurulumunu yaptıktan sonra Visual Studio ile yeni bir MVC projesi açıyoruz. Projemize, Code First yaklaşımı için EntityFramwork'u, MySQL için de MySql.Data ve MySql.Entity kütüphanelerini yüklememiz gerekiyor. Bunun için proje içerisinde Nuget üzerinden arama yapabilirsiniz ya da Nuget Package Manager konsolu üzerinden sırasıyla aşağıdaki şekilde yazıp projeye yükleyebilirsiniz.
 
 <blockquote>
 Install-Package EntityFramework<br />
@@ -41,11 +41,6 @@ Gereksinimlerimizi tamamladıktan sonra Model yapımızı yani veri tabanında o
 
 **Product.cs**
 {% highlight csharp %}
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
 namespace CodeFirstApplication.Models
 {
     public class Product
@@ -64,11 +59,6 @@ namespace CodeFirstApplication.Models
 
 **Category.cs**
 {% highlight csharp %}
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
 namespace CodeFirstApplication.Models
 {
     public class Category
@@ -78,15 +68,11 @@ namespace CodeFirstApplication.Models
     }
 }
 {% endhighlight %}
+
 Modellerimizi oluşturduktan sonra bu tablolarımızın oluşturulabilmesi için EntityFramework'un base type sınıfı olan **DbContext** sınıfını kullandığımız Context yapımızı oluşturuyoruz;
+
 **CodeFirstContext.cs**
 {% highlight csharp %}
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
-
 namespace CodeFirstApplication.Models
 {
     public class CodeFirstContext : DbContext
@@ -96,14 +82,17 @@ namespace CodeFirstApplication.Models
     }
 }
 {% endhighlight %}
+  
 <blockquote>Context'i oluşturacağımız bu dosyada tablo isimlerini verirken EntityFramework siz yazmasanız da <strong>"s"</strong> ve ya <strong>"ies"</strong> eklemekte, burada düzenli olması açısıdan ben kendim yazdım.</blockquote>
 
 Model ve context yapımızı oluşturduğumuza göre **Web.config** dosyamızda veri tabanı bağlantı cümleciğimizi güncelliyoruz. Güncelliyoruz dememin sebebi **EntityFramework** dll dosyamızı nuget üzerinden yüklediğimiz sırada buraya örnek connection string'i ve microsoft yine kendi ürünü olan Sql Server'in provider sınıfını otomatik olarak eklemekte, biz kendi bilgilerimiz ile güncellerken **name** kısmına context'e verdiğimiz adın aynısını veriyoruz, **providerName**'in de aşağıdaki gibi olduğuna dikkat edelim. Oluşacak veri tabanı adını da buradan belirtebiliyoruz, ben CodeFirstDB adını verdim siz farklı isim kullanabilirsiniz.
+
 {% highlight xml %}
   <connectionStrings>
     <add name="CodeFirstContext" connectionString="Data Source=localhost;port=3306; Initial Catalog=CodeFirstDB;uid=root; pwd=1234" providerName="MySql.Data.MySqlClient" />
   </connectionStrings>
 {% endhighlight %}
+
 Bağlantı ayarlarımızıda güncelledikten sonra veri tabanımızı kod üzerinden oluşturacağımız CodeFirst yaklaşımının **migration** özelliğini etkinleştirip yeni migration ekleyeceğiz. Bunun için Package Manager Console'u kullanıyoruz.
 
 1- İlk olarak **enable-migrations** komutu ile migration'ımızı etkinlieştiriyoruz;
@@ -126,14 +115,9 @@ Yukarıdaki adımlar sonrasında update-database yaptıysanız aşağıdaki gib
 <blockquote><span style="color: #ff0000;">Specified key was too long; max key length is 767 bytes</span></blockquote>
 
 Mysql kod tarafında oluşturulduğundan default olarak InnoDB engine yapısını kullanır, primary key olarak belirttiğimiz alanlar için bu hatayı döndürür. Buna çözüm olarak Context modelimizi aşağıdaki gibi tekrar güncelliyoruz. Daha önce yukarıda SqlGenerator için yaptığımız ayarın bir benzerini burada yapıyoruz.
+
 **CodeFirstContext.cs**
 {% highlight csharp %}
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
-
 namespace CodeFirstApplication.Models
 {
     [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
@@ -156,6 +140,7 @@ CodeFirst yaklaşımı diğer yaklaşımlara göre daha çok kullandığım bir 
 Umarım faydalı olmuştur.
 
 *Kaynaklar;*
+
 * [ASP.NET: Setup a MVC5 website with MySQL, Entity Framework 6 Code-First and VS2013](http://www.ryadel.com/2014/10/20/asp-net-setup-mvc5-website-mysql-entity-framework-6-code-first-vs2013/)
 * [6 Steps To Get Entity Framework 5 Working with MySql 5.5](http://www.nsilverbullet.net/2012/11/07/6-steps-to-get-entity-framework-5-working-with-mysql-5-5/)
 * [Getting Started with Entity Framework 6 Code First using MVC 5](https://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
