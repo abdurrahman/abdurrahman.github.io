@@ -14,7 +14,7 @@ If you'd like to work with me on something, i am open to contacts about freelanc
 * [GitHub](http://github.com/abdurrahman)
 * [Twitter](https://twitter.com/xJason21)
 * [LinkedIn](https://www.linkedin.com/in/isikabdurrahman)
-* [Soundcloud](https://soundcloud.com/xJason21)
+* [Soundcloud](https://soundcloud.com/isikabdurrahman)
 
 
 <img src="{{ site.baseurl }}/assets/153961-300x16.gif" alt="metallica" width="300" height="16" />
