@@ -153,9 +153,9 @@ Aşağıdaki şekilde C# tipleri ve alacağı maximum ve minimum değerleri veri
 
 Aşağıda örnek olarak **Int** ve **Double** değişkenlerinin min. ve max değerlerini inceledik..
 
-{% highlight csharp %}
+```csharp
 Console.WriteLine("Int degiskenin Min Degeri :" + int.MinValue.ToString());
 Console.WriteLine("Int degiskenin Max Degeri :" + int.MaxValue.ToString());
 Console.WriteLine("Double degiskenin Min Degeri :" + double.MinValue.ToString());
 Console.WriteLine("Double degiskenin Max Degeri :" + double.MaxValue.ToString());
-{% endhighlight %}
+```
