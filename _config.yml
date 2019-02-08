@@ -4,12 +4,12 @@
 permalink:           /:year/:month/:title/
 
 # Setup
-title:               uykusuzadam blog
+title:               Abdurrahman Işık
 tagline:             'some development practices'
 description:         '.Net framework, asp.net mvc, javascript and some back-end stuffs by Abdurrahman Işık'
 url:                 http://abdurrahman.github.io
 baseurl:             ''
-paginate:            10
+paginate:            5
 
 # About/contact
 author:
