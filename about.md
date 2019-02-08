@@ -5,7 +5,7 @@ title: About me
 
 # Abdurrahman Işık
 
-Howdy! I'm a software developer who lives in Istanbul, TR. I am playing guitar as an amateur in my free time and am interested in photography. I love video games and sharing what i've learn about development stuffs.
+Howdy! I'm a software engineer living in Istanbul, TR. I am experienced with all stages of the development cycle for web-based applications in 5+ years. When i am not writing code, i like reading book and playing guitar.
 
 If you'd like to work with me on something, i am open to contacts about freelancing. Feel free to get in touch!
 
